@@ -1,0 +1,190 @@
+body {
+  padding-top: 0px;
+  /*background:url('../img/back.jpg') no-repeat ;
+  background-size: cover*/
+
+}
+
+
+
+/*----------------------------Css for Tips-----------------------------------------------------------------------*/
+.tip
+{
+	height:100%;
+	width: 100%;
+	background-image: -webkit-linear-gradient(277deg,#181830 20%, white 0%);
+}
+.heading h1
+{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	padding-top: 4%;
+	padding-left: 2%;
+	
+}
+.heading_icon
+{
+	padding-right: 20px;
+}
+.tips_cards
+{
+	margin-top: 10%;
+	height:100%;
+	
+}
+.tips_cards .card
+{
+	border:1px solid #43B045;
+}
+.tips_cards ul li a
+{
+	font-size: 18px;
+	color:#43B045;
+}
+.tips_cards .card-header 
+{
+	font-size: 20px;
+	color:#181830;
+	font-weight: bolder;
+	border-bottom:1px solid #43B045;
+}
+.tips_cards .card-footer
+{
+	font-size: 20px;
+	color:#181830;
+	border-top:1px solid #43B045;
+}
+.tips_cards .tab-pane .card-text
+{
+	font-size: 15px;
+	color:#78909c;
+}
+#myTabContent
+{
+	margin-top: 30px;
+	height: 350px;
+	overflow: auto;
+}
+.new_tip
+{
+	background-color:	#43B05F;
+	height:100%;
+	width: 100%;
+}
+.new_tip_content_heading
+{
+	padding-top:10%;
+	text-align: center;
+}
+.new_tip_content_textarea
+{
+	padding-top: 10%;
+	 
+}
+.new_tip_content_textarea input
+{
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+.subhead
+{
+	text-align: center;
+	padding-bottom:5%;
+}
+.subhead h2
+{
+	color:#181830;
+	font-weight: bolder;
+	font-size: 30px;
+}
+.subhead p
+{
+	font-size: 15px;
+}
+.Submit_Your_Tip
+{
+	padding-top: 10%;
+	text-align: center;
+	padding-bottom: 17%;
+}
+.Submit_Your_Tip button
+{
+	font-size: 15px;
+	font-weight: bold;
+	border:2px solid #181830;
+	background-image: -webkit-linear-gradient(64.5deg,#181830 50%, 	#43B05F 50%);
+	height:40px;
+	width:200px;
+}
+.hamburger
+{
+	font-size:30px;
+	cursor:pointer;
+	color:white;
+	position:absolute;
+	top:3vw;
+	left:4vw;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#181830;
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 80px;
+}
+
+.sidenav a {
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #43B05F;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    text-decoration: none;
+    color:white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav .closebtn :hover
+{
+	text-decoration: none;
+}
+.sidenav_icon
+{
+	padding: 10px 10px 10px 20px;
+}
+/*********************************CSS for readymade code************************************************************/
+
+.readymadecode
+{
+	background-color: #e9eaea;
+	height: 650px;
+}
+.codeCards
+{
+	padding-top:10%;
+}
+
+.mycard
+{
+	background: url('../img/nodejs.jpg') no-repeat ;
+	background-size: cover;
+
+	background-color: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4));
+}

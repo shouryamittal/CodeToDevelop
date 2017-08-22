@@ -1,0 +1,18 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+	.tip
+	{
+		background-image: -webkit-linear-gradient(280deg,#181830 15%, white 0%);
+	}
+	.heading h1
+	{
+		
+		font-size: 35px;
+		
+	}
+	.tips_cards
+	{
+		margin-top: 20%;
+		height:100%;
+		
+	}
+}
