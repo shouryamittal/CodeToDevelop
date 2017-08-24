@@ -21,7 +21,7 @@ body
 
 .menu_btn{
 	position: absolute;
-	top: 5%;
+	top: 3%;
 	left: 4%;
 	color:white;
 	font-size: 40px;
@@ -73,9 +73,14 @@ body
 .menu_item:hover{
 	color: white;
 }
+.logoImg
+{
+	margin-left: 50%;
+	background-color: red;
+}
 .slides{
 	position: absolute;
-	top: 30%;
+	top:10%;
 	color: white
 }
 

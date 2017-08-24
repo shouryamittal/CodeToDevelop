@@ -1,6 +1,6 @@
 var app= angular.module('codetodevelop',['ui.router']);
 app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
-	$urlRouterProvider.otherwise('/mainpage');
+	$urlRouterProvider.otherwise('/signin');
 	$locationProvider.html5Mode(true);
 	$stateProvider
 	.state('mainpage',{
@@ -17,6 +17,16 @@ app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 		url:'/readymadecode',
 		templateUrl:'./templates/readymadecode.html',
 		controller:'readymadecodeController'
+	})
+	.state('signup',{
+		url:'/signup',
+		templateUrl:'./templates/signup.html',
+		controller:'signupController'
+	})
+	.state('signin',{
+		url:'/signin',
+		templateUrl:'./templates/signin.html',
+		controller:'signinController'
 	})
 })
 app.controller('mainpageController',function($scope){
@@ -60,5 +70,13 @@ app.controller('tipsController',function($scope,$rootScope)
 	
 })
 app.controller('readymadecodeController',function($scope,$rootScope){
+
+})
+
+app.controller('signupController',function($scope,$rootScope){
+
+})
+
+app.controller('signinController',function($scope,$rootScope){
 
 })

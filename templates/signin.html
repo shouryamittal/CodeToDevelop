@@ -1,0 +1,83 @@
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+<div class="signinPage">
+	<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#"><span class="sidenav_icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
+		  <a href="#"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true"></i></span>Practice</a>
+		  <a href="#"><span class="sidenav_icon"><i class="fa fa-cubes" aria-hidden="true"></i></span>Readymade Code</a>
+		  <a href="#"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true"></i></span>Gallery</a>
+		</div>
+		<span class="hamburger" onclick="openNav()">&#9776;</span>
+		<div class="container signinsection">
+			<div class=" col-md-offset-1 col-md-5 signInText">
+				<div class="logoImg">
+					<img src="./img/logo1.png" height="150" width="150">
+				</div>
+				<div class="welcomeText">
+					<h1>Welcome</h1>
+					<h6>Register here for new account</h6>
+					<p>Code_To_Develop aims to help beginners who are keen to learn new technologies but unfotunately do not get the starting of the thread. So, to get to the right path and start off your journey towards your goal,register here. </p>
+					<button type="button" class="btn btn-primary" style=" background-color:#181830;border:1px solid #181830;color:white;font-size:15px;width:40%">Sign Up</button>
+					
+				</div>
+				
+			</div>
+			<div class="col-sm-12 col-md-4 signinCard">
+				<div class="signinTint"></div>
+
+				<div class="container">
+					<div class="row signinHeading">
+						<span><i class="fa fa-sign-in" aria-hidden="true" style="color:white;font-size:30px;padding-right:7px;padding-top:9px"></i></span><p>Sign In</p>
+					</div>
+
+					<div class="signinForm">
+						<form>
+						    <div class="form-group row">
+						      
+						      <div class="col-sm-11">
+						        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+						      </div>
+						    </div>
+
+						    <div class="form-group row">
+						      
+						      <div class="col-sm-11">
+						        <input type="password" class="form-control" id="inputEmail3" placeholder="Password">
+						      </div>
+						    </div>
+						    <div class=" row signinButton">
+						      <div class="col-sm-11">
+						       <button type="button" class="btn btn-outline-success">Sign In</button>
+						      </div>
+						    </div>
+						    
+						</form>
+						<hr style="background-color:grey;position:absolute;top:200px">
+						<div class="signinBottom">
+							<div class="form-group">
+						        <div class="col-sm-12 text-center">	
+						        	
+						          	<a href="">Forgot Pasword??</a>
+						        </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	
+</div>
+
+<script>
+			function openNav() {
+			    document.getElementById("mySidenav").style.width = "300px";
+			}
+
+			function closeNav() {
+			    document.getElementById("mySidenav").style.width = "0";
+			}
+</script>

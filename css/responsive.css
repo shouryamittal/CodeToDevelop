@@ -15,4 +15,110 @@
 		height:100%;
 		
 	}
+
+
+/**********************Css related to signup page*****************************************************************/
+.hamburger
+{
+	font-size:20px;
+	cursor:pointer;
+	color:#181830;
+	position:absolute;
+	top:3vw;
+	left:4vw;
+}
+.sidenav {
+    
+    background-color:#43B05F;
+    
+}
+.sidenav a {
+    
+    color: #181830;
+    
+    
+}
+
+.signUppage
+{
+	background-color: white;
+	
+}
+.signcard
+{
+	margin-top: 20vw;
+	
+	height: 100%;
+	width: 100%;
+	padding-right: 0vw;
+	padding-left: 8vw;
+	padding-right: 0vw;
+	
+}
+.leftPane
+{
+	display: none;
+}
+.rightPane
+{
+	
+	border-top-right-radius: 0em 0em;
+	border-bottom-right-radius:0em;
+}
+
+.selectButton
+{
+	
+	padding-top:4vw;
+	height:100%;
+	border:none;
+
+}
+.selectButton button
+{
+	background-color: #43B05F;
+	width: 100%;
+	font-size: 15px;
+}
+
+.myform
+{
+
+	padding-top: 20vw;
+	padding-left:10vw;
+	
+}
+.myform input
+{
+	background-color: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #43B05F;
+	box-shadow: none;
+
+}
+.signupheading p
+{
+	color:white;
+	font-size: 25px;
+}
+.buttons
+{
+	padding-top: 2vw;
+	padding-bottom: 5vw;
+}
+ .signupbutton button
+ {
+ 	width:100%;
+ 	font-size: 12px;
+
+ }
+.form-group
+{
+	padding-top: 4vw;
+}
+
+
+
 }
