@@ -120,5 +120,23 @@
 }
 
 
+/** css relared to practise section*/
+	.top_section_heading{
+		font-size: 8vw;
+		position: absolute;
+		top: 10%;
+		left: 37%;
+	}
 
+	.top_section_subheading{
+		position: absolute;
+		top: 17%;
+		left: 13%;
+		font-size: 3.5vw;
+	}
+
+	.cards_row
+	{
+		padding-top: 80vw;
+	}
 }
