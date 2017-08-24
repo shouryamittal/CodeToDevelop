@@ -461,3 +461,147 @@ body {
 	font-size: 12px;
 	color: #181830;
 }
+
+/*css for practise section*/
+
+.top_section
+{
+	background: url('../img/5.jpg') no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 709px;
+}
+
+.top_section_heading{
+	color: white;
+	font-size: 4vw;
+	position: absolute;
+	top: 8%;
+	left: 42%;
+}
+
+.top_section_subheading{
+	color: #43B05F;
+	position: absolute;
+	top: 20%;
+	left: 33%;
+	font-size: 1.5vw;
+}
+
+.editor_btn{
+	position: absolute;
+	top: 27%;
+	left: 43%;
+	width: 14%;
+	height: 7%;
+	color: white;
+	background-color: transparent;
+}
+
+.editor_btn:hover
+{
+	color:#43B045;
+}
+
+.card
+{
+	height: 70%;
+}
+
+.html_img, .css_img{
+	height: 80%; 
+	width: 80%;
+	padding-top: 25%;
+	padding-left: 20%
+}
+
+.js_img{
+	height: 80%; 
+	width: 73%;
+	padding-top: 20%;
+	padding-left: 25%
+}
+
+.java_img{
+	height: 80%; 
+	width: 80%;
+	padding-top: 20%;
+	padding-left: 24%
+}
+
+.htmlPractise_tint{
+	/*background: linear-gradient(rgba(255, 87, 34,0.2),rgba(255, 87, 34,0.2));*/
+	border: 2px solid rgba(255, 87, 34,0.2);
+}
+/*rgba(255, 87, 34,0.9)
+rgba(213, 0, 0,0.4)*/
+.cssPractise_tint
+{
+	/*background: linear-gradient(rgba(213, 0, 0,0.5),rgba(213, 0, 0,0.5));*/
+}
+/*rgba(85, 139, 47,0.7),rgba(255, 196, 0,0.7)*/
+
+.jsPractise_tint
+{
+	/*background: linear-gradient(rgba(85, 139, 47,0.7),rgba(85, 139, 47,0.7));*/
+}
+
+.javaPractise_tint{
+	/*background: linear-gradient(rgba(255, 196, 0,0.7),rgba(255, 196, 0,0.7));	*/
+}
+
+.html_prac_btn
+{
+	border: 3px solid rgba(255, 87, 34,0.5);
+	font-size: 1.3vw;
+	background-color: transparent;
+	color: white;
+	margin-top: 20px
+}
+
+.html_prac_btn:hover
+{
+	color: rgba(255, 87, 34,0.5);
+}	
+
+.css_prac_btn
+{
+	border: 3px solid rgba(213, 0, 0,0.5);
+	font-size: 1.3vw;
+	background-color: transparent;
+	color: white;
+	margin-top: 20px
+}
+
+.css_prac_btn:hover
+{
+	color: rgba(213, 0, 0,0.5)
+}
+
+.js_prac_btn
+{
+	border: 3px solid rgba(85, 139, 47,0.7);
+	font-size: 1.3vw;
+	background-color: transparent;
+	color: white;
+	margin-top: 20px
+}
+
+.js_prac_btn:hover
+{
+	color: rgba(85, 139, 47,0.7)
+}
+
+.java_prac_btn
+{
+	border: 3px solid rgba(255, 196, 0,0.6);
+	font-size: 1.3vw;
+	background-color: transparent;
+	color: white;
+	margin-top: 20px
+}
+
+.java_prac_btn:hover
+{
+	color: rgba(255, 196, 0,0.6)
+}

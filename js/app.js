@@ -1,6 +1,6 @@
 var app= angular.module('codetodevelop',['ui.router']);
 app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
-	$urlRouterProvider.otherwise('/signin');
+	$urlRouterProvider.otherwise('/mainpage');
 	$locationProvider.html5Mode(true);
 	$stateProvider
 	.state('mainpage',{
@@ -28,12 +28,23 @@ app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 		templateUrl:'./templates/signin.html',
 		controller:'signinController'
 	})
+	.state('practise',{
+		url:'/practise',
+		templateUrl: './templates/practise.html',
+		controller: 'practiseController'
+	})
+	.state('html_practise',{
+		url: '/html_practise',
+		templateUrl: 'html_practise.html',
+		controller: 'html_practiseController'
+	})
 })
 app.controller('mainpageController',function($scope){
 	console.log("hello");
 
 	$('.slide2').hide();
 	$('.slide3').hide();
+	$('.slide4').hide();
 	function call()
 	{
 		$('.slide1').fadeIn(3000,function(){
@@ -42,7 +53,11 @@ app.controller('mainpageController',function($scope){
 					$('.slide2').fadeOut(2000,function(){
 						$('.slide3').fadeIn(1000,function(){
 							$('.slide3').fadeOut(2000,function(){
-								call();
+								$('.slide4').fadeIn(2000,function(){
+									$('.slide4').fadeOut(2000,function(){
+										call();
+									})
+								})
 							})
 						})
 					})
@@ -79,4 +94,12 @@ app.controller('signupController',function($scope,$rootScope){
 
 app.controller('signinController',function($scope,$rootScope){
 
+})
+
+app.controller('practiseController',function($scope,$rootScope){
+	console.log('practiseController callde');
+})
+
+app.controller('html_practiseController',function($scope,$rootScope){
+	
 })
