@@ -4,7 +4,7 @@ const express = require('express'),
 app.use(express.static('./'));
 app.use(express.static('public'));
 app.get('/', (request, response) => {
-    response.sendFile(path.join(__dirname, 'templates/html_practise.html'));
+    response.sendFile(path.join(__dirname, 'templates/mainpage.html'));
 })
 
 app.listen(8888, () => {
