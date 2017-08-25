@@ -15,18 +15,16 @@
 		height:100%;
 		
 	}
-
-
+	.hamburger
+	{
+		
+		top:5vw;
+		left:5vw;
+	}
+	
 /**********************Css related to signup page*****************************************************************/
-.hamburger
-{
-	font-size:20px;
-	cursor:pointer;
-	color:#181830;
-	position:absolute;
-	top:3vw;
-	left:4vw;
-}
+
+
 .sidenav {
     
     background-color:#43B05F;
@@ -119,8 +117,95 @@
 	padding-top: 4vw;
 }
 
+/*********************Css for Signin************************************************************/
+.signinHeading
+{
+	position: absolute;
+	padding-top: 20vw;	
+	padding-left: 20vw;
 
-/** css relared to practise section*/
+}
+.signinHeading p
+{
+	font-size: 30px;
+	color:white;
+}
+.signinForm
+{
+	padding-left: 2vw;
+	padding-top:40vw;
+	padding-bottom: 20vw;
+}
+.signinsection
+{
+	padding-top:20%;
+	
+}
+.signInText
+{
+	display: none;
+}
+.signinButton
+{
+	padding-top: 7vw;
+	padding-bottom: 20vw;
+	width:100%;
+}
+.signinPage
+{
+	background-color: white;
+}
+
+/*******************************Css for readymade code**************************************************/
+.rmcleftContainer
+{
+	margin-top:15vw; 
+}
+.code
+{
+	padding-bottom: 20vw;
+}
+.rmcleftText
+{
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+}
+.rmcleftText h1
+{
+	
+	font-size:25px;
+	padding: 0px 10px 10px 30px;
+	
+}
+.rmcleftText p
+{
+	font-size: 12px;
+	padding: 0px 45px 10px 30px;
+}
+
+.rmcright
+{
+	
+	padding-bottom: 10vw;
+}
+.rmcright button
+{
+	width:60%;
+}
+.rmcDiv
+{
+	width:100%;padding-top:10vw;
+}
+.rmcDivbutton
+{
+	padding-top:10vw;
+}
+.row1
+{
+	margin-top:15vw;
+	
+}
+/** *****************************************************css relared to practise section********************/
 	.top_section_heading{
 		font-size: 8vw;
 		position: absolute;

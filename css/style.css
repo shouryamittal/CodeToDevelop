@@ -107,7 +107,7 @@ body {
 {
 	padding-top: 10%;
 	text-align: center;
-	padding-bottom: 17%;
+	padding-bottom: 7%;
 }
 .Submit_Your_Tip button
 {
@@ -248,9 +248,21 @@ body {
 	width:100%;
 	padding-bottom: 6.5vw;
 }
+.rmcright button
+{
+	width:80%;color:#43B05F;font-size:20px;border:2px solid #181830;background-color:#181830
+}
+.rmcDiv
+{
+	width:100%;padding-top:1vw;
+}
+.rmcDivbutton
+{
+	padding-top:2vw;
+}
 .row1
 {
-	margin-top:7vw;
+	margin-top:6vw;
 	
 }
 /**********************Css related to signup page*****************************************************************/
