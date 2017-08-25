@@ -2,7 +2,8 @@ body {
   padding-top: 0px;
   /*background:url('../img/back.jpg') no-repeat ;
   background-size: cover*/
-
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -122,7 +123,7 @@ body {
 	font-size:30px;
 	cursor:pointer;
 	color:#43B05F;
-	position:absolute;
+	position:fixed;
 	top:3vw;
 	left:4vw;
 }
@@ -176,60 +177,82 @@ body {
 .readymadecode
 {
 	background-color: #e9eaea;
-	/*background: url('../img/readymadecode.jpg') no-repeat;
+	/*background: url('../img.jpg') no-repeat;
 	background-size: cover;*/
+	
+	height:100%;
+	width: 100%;
+}
+.rmcleft
+{
+	background: url('../img/readymadecode2.jpg') no-repeat;
+	background-size: cover;
 	height:653px;
 	width: 100%;
 }
-.codeCards
+.rmcleftContainer
 {
-	padding-top:15%;
-
+	margin-top:5vw; 
 }
-.readymadecode .card
+.rmcleftTint
 {
-	border:none;
-	box-shadow: 10px 10px 5px #888888;
-}
-.cardbody
-{
-	z-index: 4;
-}
-
-.cardTint
-{
-	background:linear-gradient(rgba(24, 24, 48, 0.6),rgba(24, 24, 48, 0.6));
+	background:linear-gradient(rgba(24, 24, 48, 0.8),rgba(24, 24, 48, 0.8));
 	position: absolute;
-	top:0px;
+	top: 0px;
 	left: 0px;
-	height: 300px;
 	width: 100%;
-	transition: height 2s ease-in-out
-}
+	height: 100%;
 
-.mycard1
+}
+.code
 {
-	background: url('../img/nodejs.jpg') no-repeat ;
-	background-size: cover;
-	height:300px;
-
+	padding-bottom: 2vw;
 }
-
-.mycard2
+.rmcleftText
 {
-	background: url('../img/java.png') no-repeat ;
-	background-size: cover;
-	height:300px;
-	background-color: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4));
+	padding-top: 2vw;
+	padding-bottom: 2vw;
 }
-.mycard3
+.rmcleftText h1
 {
-	background: url('../img/nodejs.jpg') no-repeat ;
-	background-size: cover;
-	height:300px;
-	background-color: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4));
+	color:white;
+	font-size: 40px;
+	font-weight: bolder;
+	padding: 0px 45px 10px 25px;
 }
+.rmcleftText p
+{
+	font-size: 12px;
+	padding: 0px 45px 10px 25px;
+}
+.bottomNav
+{
+	padding-top: 10vw
+}
+.bottomNav ul li
+{
+	display: inline;
 
+}
+.bottomNav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+.rmcright
+{
+	background-color: #43B05F;
+	height:100%;
+	width:100%;
+	padding-bottom: 6.5vw;
+}
+.row1
+{
+	margin-top:7vw;
+	
+}
 /**********************Css related to signup page*****************************************************************/
 .signupContainer
 {
@@ -325,9 +348,15 @@ body {
 {
 	padding-top: 1vw;
 }
+.signupbutton
+{
+	width:100%;
+
+	
+}
  .signupbutton button
  {
- 	width:7vw;
+ 	width:100%;
  	font-size: 12px;
  }
 .form-group
@@ -338,7 +367,7 @@ body {
 .signinPage
 {
 	background-color: #e9eaea;
-	height:653px;
+	height:100%;
 	width:100%;
 }
 .signinsection
@@ -469,14 +498,14 @@ body {
 	background: url('../img/5.jpg') no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 709px;
+	height:100%;
 }
 
 .top_section_heading{
 	color: white;
 	font-size: 4vw;
 	position: absolute;
-	top: 8%;
+	top: 6%;
 	left: 42%;
 }
 
@@ -508,7 +537,7 @@ body {
 
 }
 
-.card
+.card1
 {
 	height: 70%;
 }

@@ -1,9 +1,11 @@
 /*-------------------CSS for LAnding page----------------------------------------------------------------------*/
-body
+
+.mainpageSection
 {
-	background:url('../img/back6.jpg') no-repeat ;
+	background: url('../img/back6.jpg') no-repeat;
 	background-size: cover;
-	
+	height: 653px;
+	width: 100%;	
 }
 .back_tint{
 	position: absolute;
@@ -80,7 +82,7 @@ body
 }
 .slides{
 	position: absolute;
-	top:2%;
+	top:15vw;
 	color: white
 }
 

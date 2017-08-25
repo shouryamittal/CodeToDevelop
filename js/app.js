@@ -35,7 +35,7 @@ app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 	})
 	.state('html_practise',{
 		url: '/html_practise',
-		templateUrl: 'html_practise.html',
+		templateUrl: './templates/html_practise.html',
 		controller: 'html_practiseController'
 	})
 })
