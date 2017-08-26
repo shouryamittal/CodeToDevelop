@@ -515,38 +515,34 @@ body {
 
 .top_section_heading{
 	color: white;
-	font-size: 4vw;
-	position: absolute;
-	top: 6%;
-	left: 42%;
+	font-size: 2.5vw;
+	padding-top: 6%;
 }
 
 .top_section_subheading{
-	color: #43B05F;
-	position: absolute;
-	top: 20%;
-	left: 33%;
-	font-size: 1.5vw;
+	color: #43B05F;	
+	font-size: 1.3vw;
 }
 
-.editor_btn{
-	position: absolute;
-	top: 27%;
-	left: 43%;
-	width: 14%;
-	height: 7%;
+.editor_btn_in_practise
+{
+	width: 10%;
+	height: 10%;
+	background: transparent;
 	color: white;
-	background-color: transparent;
+	font-size: 2vw;
 }
 
-.editor_btn:hover
+.editor_btn_in_practise:hover
 {
 	color:#43B045;
 }
 
 .cards_row
 {
-
+	padding-top: 4vw;
+	padding-left: 3vw;
+	padding-right: 3vw; 
 }
 
 .card1
@@ -650,4 +646,39 @@ rgba(213, 0, 0,0.4)*/
 .java_prac_btn:hover
 {
 	color: rgba(255, 196, 0,0.6)
+}
+
+/** extra css for html_practise section*/
+.top_div
+{
+	background: url('../img/5.jpg');
+	background-size: cover;
+	height: 20vw;
+	width: 100%;
+	margin-top: 0px;
+}
+
+.html_practise_heading
+{
+	color: white;
+	font-size: 2.5vw;
+	padding-top: 6vw
+}
+
+.html_practise_subheading
+{
+	color: #43B05F;
+	font-size: 1.6vw;
+	margin-top: -10px;
+}
+
+.editor_btn{
+	color: white;
+	background-color: transparent;
+	border: 1px solid #43B05F;
+}
+
+ol
+{
+	font-size: 15px
 }

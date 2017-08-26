@@ -3,18 +3,21 @@
 	{
 		background-image: -webkit-linear-gradient(280deg,#181830 15%, white 0%);
 	}
+
 	.heading h1
 	{
 		
 		font-size: 35px;
 		
 	}
+
 	.tips_cards
 	{
 		margin-top: 20%;
 		height:100%;
 		
 	}
+
 	.hamburger
 	{
 		
@@ -23,205 +26,487 @@
 	}
 	
 /**********************Css related to signup page*****************************************************************/
+	.sidenav {
+	    
+	    background-color:#43B05F;
+	    
+	}
 
+	.sidenav a {
+	    
+	    color: #181830;    
+	}
 
-.sidenav {
-    
-    background-color:#43B05F;
-    
-}
-.sidenav a {
-    
-    color: #181830;
-    
-    
-}
+	.signUppage
+	{
+		background-color: white;
+	}
 
-.signUppage
-{
-	background-color: white;
+	.signcard
+	{
+		margin-top: 20vw;	
+		height: 100%;
+		width: 100%;
+		padding-right: 0vw;
+		padding-left: 8vw;
+		padding-right: 0vw;
+	}
+
+	.leftPane
+	{
+		display: none;
+	}
+
+	.rightPane
+	{	
+		border-top-right-radius: 0em 0em;
+		border-bottom-right-radius:0em;
+	}
+
+	.selectButton
+	{	
+		padding-top:4vw;
+		height:100%;
+		border:none;
+	}
+
+	.selectButton button
+	{
+		background-color: #43B05F;
+		width: 100%;
+		font-size: 15px;
+	}
+
+	.myform
+	{
+		padding-top: 20vw;
+		padding-left:10vw;	
+	}
+
+	.myform input
+	{
+		background-color: transparent;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid #43B05F;
+		box-shadow: none;
+	}
+
+	.signupheading p
+	{
+		color:white;
+		font-size: 25px;
+	}
 	
-}
-.signcard
-{
-	margin-top: 20vw;
+	.buttons
+	{
+		padding-top: 2vw;
+		padding-bottom: 5vw;
+	}
 	
-	height: 100%;
-	width: 100%;
-	padding-right: 0vw;
-	padding-left: 8vw;
-	padding-right: 0vw;
+	.signupbutton button
+	{
+	 	width:100%;
+	 	font-size: 12px;
+
+	}
 	
-}
-.leftPane
-{
-	display: none;
-}
-.rightPane
-{
+	.form-group
+	{
+		padding-top: 4vw;
+	}
+
+	/*********************Css for Signin************************************************************/
+	.signinHeading
+	{
+		position: absolute;
+		padding-top: 20vw;	
+		padding-left: 20vw;
+	}
+
+	.signinHeading p
+	{
+		font-size: 30px;
+		color:white;
+	}
 	
-	border-top-right-radius: 0em 0em;
-	border-bottom-right-radius:0em;
-}
-
-.selectButton
-{
+	.signinForm
+	{
+		padding-left: 2vw;
+		padding-top:40vw;
+		padding-bottom: 20vw;
+	}
 	
-	padding-top:4vw;
-	height:100%;
-	border:none;
+	.signinsection
+	{
+		padding-top:20%;	
+	}
 
-}
-.selectButton button
-{
-	background-color: #43B05F;
-	width: 100%;
-	font-size: 15px;
-}
-
-.myform
-{
-
-	padding-top: 20vw;
-	padding-left:10vw;
+	.signInText
+	{
+		display: none;
+	}
 	
-}
-.myform input
-{
-	background-color: transparent;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 1px solid #43B05F;
-	box-shadow: none;
-
-}
-.signupheading p
-{
-	color:white;
-	font-size: 25px;
-}
-.buttons
-{
-	padding-top: 2vw;
-	padding-bottom: 5vw;
-}
- .signupbutton button
- {
- 	width:100%;
- 	font-size: 12px;
-
- }
-.form-group
-{
-	padding-top: 4vw;
-}
-
-/*********************Css for Signin************************************************************/
-.signinHeading
-{
-	position: absolute;
-	padding-top: 20vw;	
-	padding-left: 20vw;
-
-}
-.signinHeading p
-{
-	font-size: 30px;
-	color:white;
-}
-.signinForm
-{
-	padding-left: 2vw;
-	padding-top:40vw;
-	padding-bottom: 20vw;
-}
-.signinsection
-{
-	padding-top:20%;
+	.signinButton
+	{
+		padding-top: 7vw;
+		padding-bottom: 20vw;
+		width:100%;
+	}
 	
-}
-.signInText
-{
-	display: none;
-}
-.signinButton
-{
-	padding-top: 7vw;
-	padding-bottom: 20vw;
-	width:100%;
-}
-.signinPage
-{
-	background-color: white;
-}
+	.signinPage
+	{
+		background-color: white;
+	}
 
-/*******************************Css for readymade code**************************************************/
-.rmcleftContainer
-{
-	margin-top:15vw; 
-}
-.code
-{
-	padding-bottom: 20vw;
-}
-.rmcleftText
-{
-	padding-top: 5vw;
-	padding-bottom: 5vw;
-}
-.rmcleftText h1
-{
+	/*******************************Css for readymade code**************************************************/
+	.rmcleftContainer
+	{
+		margin-top:15vw; 
+	}
 	
-	font-size:25px;
-	padding: 0px 10px 10px 30px;
+	.code
+	{
+		padding-bottom: 20vw;
+	}
 	
-}
-.rmcleftText p
-{
-	font-size: 12px;
-	padding: 0px 45px 10px 30px;
-}
+	.rmcleftText
+	{
+		padding-top: 5vw;
+		padding-bottom: 5vw;
+	}
+	
+	.rmcleftText h1
+	{	
+		font-size:25px;
+		padding: 0px 10px 10px 30px;	
+	}
+	
+	.rmcleftText p
+	{
+		font-size: 12px;
+		padding: 0px 45px 10px 30px;
+	}
 
-.rmcright
-{
+	.rmcright
+	{	
+		padding-bottom: 10vw;
+	}
 	
-	padding-bottom: 10vw;
-}
-.rmcright button
-{
-	width:60%;
-}
-.rmcDiv
-{
-	width:100%;padding-top:10vw;
-}
-.rmcDivbutton
-{
-	padding-top:10vw;
-}
-.row1
-{
-	margin-top:15vw;
+	.rmcright button
+	{
+		width:60%;
+	}
 	
-}
-/** *****************************************************css relared to practise section********************/
+	.rmcDiv
+	{
+		width:100%;padding-top:10vw;
+	}
+	
+	.rmcDivbutton
+	{
+		padding-top:10vw;
+	}
+	
+	.row1
+	{
+		margin-top:15vw;	
+	}
+	
+	/** *****************************************************css relared to practise section********************/
 	.top_section_heading{
 		font-size: 8vw;
-		position: absolute;
-		top: 10%;
-		left: 37%;
+		padding-top: 16%;
 	}
 
 	.top_section_subheading{
-		position: absolute;
-		top: 17%;
-		left: 13%;
 		font-size: 3.5vw;
+	}
+
+	.editor_btn_in_practise
+	{
+		font-size: 0.1vw;
+		width: 30%;
 	}
 
 	.cards_row
 	{
-		padding-top: 80vw;
+		padding-top: 8.5vw;
+		padding-left: 8vw;
+		padding-right: 8vw; 
+	}
+
+	.card1
+	{
+		height: 80%;
+	}
+
+	.html_img, .css_img
+	{
+		height: 90%; 
+		width: 80%;
+		padding-top: 15%;
+		padding-left: 20%
+	}
+
+	.java_img{
+		height: 100%; 
+		width: 80%;
+		padding-left: 24%;
+		padding-bottom: 15%;
+	}
+
+	.html_prac_btn
+	{
+		font-size: 9vw;
+		margin-top: 20px
+	}
+
+	.css_prac_btn
+	{
+		font-size: 5vw;
+		margin-top: 20px
+	}
+
+	.js_prac_btn
+	{
+		font-size: 5vw;
+		margin-top: 20px
+	}
+
+	.java_prac_btn
+	{
+		font-size: 1.3vw;
+		margin-top: 20px
+	}
+
+	/** css for html_practise**/
+
+	.top_div
+	{
+		height: 40vw;
+		width: 100%;
+	}
+
+	.html_practise_heading
+	{
+		font-size: 4vw;
+		padding-top: 14vw
+	}
+
+	.html_practise_subheading
+	{
+		font-size: 2.5vw;
+		margin-top: -10px;
+	}
+
+	.editor_btn
+	{
+		width: 20%;
+		height: 4%;
+		left: 40%;
+		font-size: 2vw
+	}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px)
+{
+	/** *****************************************************css relared to practise section********************/
+	.top_section_heading{
+		font-size: 5vw;
+		padding-top: 14%;
+	}
+
+	.top_section_subheading{
+		font-size: 3.5vw;
+	}
+
+	.editor_btn_in_practise
+	{
+		font-size: 0.1vw;
+		width: 25%;
+	}
+
+	.cards_row
+	{
+		padding-top: 8.5vw;
+		padding-left: 11vw;
+		padding-right: 11vw; 
+	}
+
+	.card1
+	{
+		height: 80%;
+	}
+
+	.html_img, .css_img
+	{
+		height: 90%; 
+		width: 80%;
+		padding-top: 15%;
+		padding-left: 20%
+	}
+
+	.java_img{
+		height: 100%; 
+		width: 80%;
+		padding-left: 24%;
+		padding-bottom: 15%;
+	}
+
+	.html_prac_btn
+	{
+		font-size: 9vw;
+		margin-top: 20px
+	}
+
+	.css_prac_btn
+	{
+		font-size: 5vw;
+		margin-top: 20px
+	}
+
+	.js_prac_btn
+	{
+		font-size: 5vw;
+		margin-top: 20px
+	}
+
+	.java_prac_btn
+	{
+		font-size: 1.3vw;
+		margin-top: 20px
+	}
+
+	/** css for html_practise**/
+
+	.top_div
+	{
+		height: 47vw;
+		width: 100%;
+	}
+
+	.html_practise_heading
+	{
+		font-size: 4vw;
+		padding-top: 17vw
+	}
+
+	.html_practise_subheading
+	{
+		font-size: 2.5vw;
+		margin-top: -10px;
+	}
+
+	.editor_btn
+	{
+		width: 20%;
+		height: 4%;
+		left: 40%;
+		font-size: 2vw
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px)
+{
+
+	/** *****************************************************css relared to practise section********************/
+	.editor_btn_in_practise
+	{
+		font-size: 0.1vw;
+		width: 15%;
+	}
+
+
+	/** css for html_practise**/
+
+	.top_div
+	{
+		height: 35vw;
+		width: 100%;
+	}
+
+	.html_practise_heading
+	{
+		font-size: 4vw;
+		padding-top: 10vw
+	}
+
+	.html_practise_subheading
+	{
+		font-size: 2.5vw;
+		margin-top: -10px;
+	}
+
+	.editor_btn
+	{
+		width: 20%;
+		height: 4%;
+		left: 40%;
+		font-size: 2vw
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px)
+{
+	/** css for html_practise**/
+
+	.top_div
+	{
+		height: 35vw;
+		width: 100%;
+	}
+
+	.html_practise_heading
+	{
+		font-size: 4vw;
+		padding-top: 10vw
+	}
+
+	.html_practise_subheading
+	{
+		font-size: 2.5vw;
+		margin-top: -10px;
+	}
+
+	.editor_btn
+	{
+		width: 20%;
+		height: 4%;
+		left: 40%;
+		font-size: 2vw
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px)
+{
+	/** css for html_practise**/
+
+	.top_div
+	{
+		height: 37vw;
+		width: 100%;
+	}
+
+	.html_practise_heading
+	{
+		font-size: 4vw;
+		padding-top: 10vw
+	}
+
+	.html_practise_subheading
+	{
+		font-size: 2.5vw;
+		margin-top: -10px;
+	}
+
+	.editor_btn
+	{
+		width: 20%;
+		height: 4%;
+		left: 40%;
+		font-size: 2vw
 	}
 }
