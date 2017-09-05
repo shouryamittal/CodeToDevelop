@@ -12,16 +12,18 @@
 	</div>
 </div>
 
-<div id="mySidenav" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<a ui-sref="mainpage"><span class="sidenav_icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
-	<a href="#"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true"></i></span>Practice</a>
-	<a href="#"><span class="sidenav_icon"><i class="fa fa-cubes" aria-hidden="true"></i></span>Readymade Code</a>
-	<a href="#"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true"></i></span>Gallery</a>
-</div>
-
-<span class="hamburger" onclick="openNav()">&#9776;</span>
-
+<div id="mySidenav" class="sidenav text-center">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="Logo " style="text-align:center">
+                <img src="./img/logo.png" height="150" width="150">
+          </div>
+          <a href="#" ui-sref="mainpage"><span class="sidenav_icon"><i class="fa fa-home" aria-hidden="true" ></i></span>Home</a>
+          <a href="#" ui-sref="tips"><span class="sidenav_icon"><i class="fa fa-lightbulb-o" aria-hidden="true" ></i></span>Tips for Developers</a>
+          <a href="#" ng-click="gotoRMC()"><span class="sidenav_icon"><i class="fa fa-cubes" aria-hidden="true" ></i></span>Readymade Code</a>
+          <a href="#" ng-click="gotoPrac()"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true" ></i></span>Practice</a>
+          <a href="#" ng-click="gotoTUT()"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true" ></i></span>Tutorials</a>
+        </div>
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
 <!--changed now-->
 <div class="jumbotron jumbotron-fluid">
   <div class="container" style="background-color: white">

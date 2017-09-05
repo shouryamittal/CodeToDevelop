@@ -53,7 +53,7 @@
 .menu_item{
 	background-color: transparent;
 	padding-top: 2%;
-	font-size: 1.4vw;
+	font-size: 20px;
 	color: white;
 }
 
@@ -65,16 +65,6 @@
 	color: white;
 }
 
-.menu_item{
-	background-color: transparent;
-	padding-top: 2%;
-	font-size: 1.4vw;
-	color: white;
-}
-
-.menu_item:hover{
-	color: white;
-}
 .logoImg
 {
 	margin-left: 50%;
@@ -97,7 +87,7 @@
 
 .feature1, .feature2{
 	color: white;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 .tip_btn_section{
@@ -117,8 +107,8 @@
 
 .feature1_subtitle ,.feature2_subtitle
 {
-	color: white;
-	font-size: 20px;
+	color: #F7F3F3;
+	font-size: 15px;
 }
 .hamburger
 {
@@ -171,4 +161,34 @@
 .sidenav_icon
 {
 	padding: 10px 10px 10px 20px;
+}
+
+.featuresFlex
+{
+	background-color: #181830;
+	height:0;
+    width:100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(24, 24, 48,0.9),rgba(24, 24, 48,0.9));
+    overflow-x: hidden;
+    transition: .5s;
+    
+}
+.ourfeature
+{
+	font-size: 45px;
+	color:white;
+	padding-top: 50px;
+	font-weight: bold;
+}
+.closef
+{
+	font-size: 40px;
+	color:white;
+	text-decoration: none;
+	float: right;
+	padding:20px;
 }

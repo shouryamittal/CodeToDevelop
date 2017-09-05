@@ -1,74 +1,99 @@
 
 <link rel="stylesheet" type="text/css" href="./css/main.css">
-
+<link rel="stylesheet" type="text/css" href="./css/responsive.css">
 <div class="mainpageSection">
 		<div class="back_tint">
+		</div>
+		<div class="featuresFlex" id="featureFlex">
+			<a href="javascript:void(0)" class="closef" onclick="closefeature()">&times;</a>
+			<div class="container">
+				<div class="text-center">
+					<p class="ourfeature">WHAT WE HAVE FOR YOU</p>
+					<hr width="300"  size="20" style="border-color:#43B05F;border-top:3px solid #43B05F "> 
+				</div>
+				<div class="row" style="padding-top:30px;padding-bottom:20px">
+					<div class="col-md-offset-1 col-md-5 text-center">
+						<div>
+							<p class="feature1">Tips for <span style="color: #43B05F">Developers</span></p>
+							<p class="feature1_subtitle">Want to make your code look alike developer's? Dive into this section and explore various tricks that you still dont know.</p>
+						</div>
+						<div class="tip_btn_section">
+							<button type="submit" class="btn btn-outline-primary  tips_btn" ui-sref="tips">Let's Dive</button>
+						</div>
+					</div>
+
+					<div class="col-md-offset-1 col-md-5 text-center " style="margin-left:30px">
+						<div>
+							<p class="feature2">Readymade <span style="color: #43B05F">Code</span></p>
+							<p class="feature2_subtitle">Rabbit or Turtle? Make your developement faster & easier.Just  copy the code and your application is ready. </p>
+						</div>
+
+						<div class="tip_btn_section">
+							<button type="submit" class="btn btn-outline-primary  tips_btn" ng-click="gotoRMC()">Let's Explore</button>
+						</div>	
+					</div>
+				</div>
+				<hr size="5" style="border-color:white;border-top:1px solid #43B05F ">
+
+
+				<div class="row" style="padding-top:30px;padding-bottom:20px">
+					<div class="col-md-offset-1 col-md-5 text-center" >
+						<div>
+							<p class="feature2">Geek <span style="color: #43B05F">Practice</span></p>
+							<p class="feature2_subtitle">Still not ready to develop? Get into this section to learn.</p>
+						</div>
+
+						<div class="tip_btn_section">
+							<button type="submit" class="btn btn-outline-primary  tips_btn" ng-click="gotoPrac()" >Let's Practice</button>
+						</div>
+					</div>
+
+					<div class="col-md-offset-1 col-md-5 text-center " style="margin-left:30px;">
+						<div>
+							<p class="feature2">Our <span style="color: #43B05F">Tutorials</span></p>
+							<p class="feature2_subtitle">Are you a noob? Come and join us to learn development.</p>
+						</div>
+
+						<div class="tip_btn_section">
+							<button type="submit" class="btn btn-outline-primary  tips_btn">Let's Join</button>
+						</div>	
+					</div>
+				</div>
+				
+			</div>
 		</div>
 
 	    <div id="mySidenav" class="sidenav">
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <i class="fa fa-university fa-4x" aria-hidden="true" style="color: white; padding-left:40%;padding-bottom:10% "></i>
-		  <!-- added-->
-		  <button type="button" class="btn btn-block btn-lg menu_item" ui-sref="tips" ng-click="showFrontEndTips()">Tips For Developers</button>
-		  <!-- added finished-->
-						<button type="button" class="btn btn-block btn-lg menu_item" ui-sref="readymadecode">Readymade Code</button>
-						<button type="button" class="btn btn-block btn-lg menu_item" ui-sref="practise">Practise</button>
+		  <div class="Logo " style="text-align:center">
+				<img src="./img/logo1.png" height="150" width="150">
+		  </div>
+		  <button type="button" class="btn btn-block btn-lg menu_item" ui-sref="tips"><span class="sidenav_icon"><i class="fa fa-lightbulb-o" aria-hidden="true" ></i></span>Tips For Developers</button>
+		  <button type="button" class="btn btn-block btn-lg menu_item" ng-click="gotoRMC()"><span class="sidenav_icon"><i class="fa fa-cubes" aria-hidden="true" ></i></span>Readymade Code</button>
+		  <button type="button" class="btn btn-block btn-lg menu_item" ng-click="gotoPrac()"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true" ></i></span>Practice</button>
 						
-						<button type="button" class="btn btn-block btn-lg menu_item">Templates</button>
-						<hr width="250"  size="1" style="border-top:3px solid white ">
-						<button type="button" class="btn btn-block btn-lg menu_item" ui-sref="signup">SignUp</button>
-						<button type="button" class="btn btn-block btn-lg menu_item" ui-sref="signin">Login</button>
-						<button type="button" class="btn btn-block btn-lg menu_item">About Us</button>
-						<button type="button" class="btn btn-block btn-lg menu_item">Contact Us</button>
+		 <button type="button" class="btn btn-block btn-lg menu_item" ng-click="gotoTUT()"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true" ></i></span>Tutorials</button>
+		<hr width="250"  size="1" style="border-top:3px solid white ">
+		<button type="button" class="btn btn-block btn-lg menu_item" ui-sref="signup"><span class="sidenav_icon"><i class="fa fa-key" aria-hidden="true" ></i></span>SignUp</button>
+		<button type="button" class="btn btn-block btn-lg menu_item" ui-sref="signin"><span class="sidenav_icon"><i class="fa fa-sign-in" aria-hidden="true" ></i></span>Login</button>
+		<!--<button type="button" class="btn btn-block btn-lg menu_item"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true" ></i></span>About Us</button>
+		<button type="button" class="btn btn-block btn-lg menu_item"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true" ></i></span>Contact Us</button>-->
 		</div>
 		<span class="hamburger" id="hamburger" onclick="openNav()">&#9776;</span>
 
 <div class="slides">
 	<div class="container text-center">
-			<!--<div class="Logo" style="margin-left:200px; margin-right:200px">
-				<img src="./img/logo.png" height="300" width="300">
+			<!--<div class="logo hidden-sm-down">
+				<img src="./img/logo.png" height="200" width="200">
 			</div>-->
-			<button type="submit" class="btn btn-outline-primary btn-lg tips_btn" ui-sref="practise">Practice Section</button>
-			<div class="col-sm-offset-0 col-sm-12 col-md-offset-3 col-md-8  slide1">
+			<div class="col-sm-12 col-md-offset-3 col-md-8 slide1" id="slide1">
 				<p class="tagline"><span style="color: #43B05F">&lt/&gt</span>Learn  <span style="color: #43B05F">Explore</span>  Develop<span style="color: #43B05F">&lt/&gt</span></p>
-				<p class="text-center sub_tagline">learn explore develop learn explore develop</p>
+				<p class="text-center sub_tagline">We are helping you to code! Come join us!</p>
+				<div class="tip_btn_section">
+					<button onclick="openFeatures()" class="btn btn-outline-primary btn-lg tips_btn">Get Set Go</button>
+				</div>
 				<hr width="100"  size="6" style="border-color:#43B05F;border-top:3px solid #43B05F "> 
 			</div>
-
-			
-				<div class="col-md-offset-4 col-md-6 slide2 text-center">
-					<div>
-						<p class="feature1">Tips for <span style="color: #43B05F">Developers</span></p>
-						<p class="feature1_subtitle">tips  tips tips tips tips tips </p>
-					</div>
-
-					<div class="tip_btn_section">
-						<button type="submit" class="btn btn-outline-primary btn-lg tips_btn">Go to Tips Section</button>
-					</div>
-				</div>
-			
-			
-				<div class="col-md-offset-4 col-md-6 text-center slide3">
-					<div>
-						<p class="feature2">Readymade <span style="color: #43B05F">Code</span></p>
-						<p class="feature2_subtitle">Code Code Code </p>
-					</div>
-
-					<div class="tip_btn_section">
-						<button type="submit" class="btn btn-outline-primary btn-lg tips_btn">Readymade Section</button>
-					</div>
-				</div>
-
-				<div class="col-md-offset-4 col-md-6 text-center slide4">
-					<div>
-						<p class="feature2">Practice <span style="color: #43B05F">Section</span></p>
-						<p class="feature2_subtitle">Practice Practice Practice </p>
-					</div>
-
-					<div class="tip_btn_section">
-						<button type="submit" class="btn btn-outline-primary btn-lg tips_btn" ui-sref="html_practise">Practice Section</button>
-					</div>
-				</div>
 			
 	</div>
 </div>
@@ -82,5 +107,18 @@
 	function closeNav() {
 	    document.getElementById("mySidenav").style.width = "0";
 	    document.getElementById('hamburger').style.display="block";
+	}
+	function openFeatures()
+	{
+		document.getElementById("featureFlex").style.height = "654px";
+		document.getElementById("slide1").style.display = "none";
+		document.getElementById("hamburger").style.display = "none"
+		console.log("print");
+	}
+	function closefeature()
+	{
+		document.getElementById("featureFlex").style.height = "0px";
+		document.getElementById("slide1").style.display = "block";
+		document.getElementById("hamburger").style.display ="block";
 	}
 </script>

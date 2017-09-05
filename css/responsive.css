@@ -1,4 +1,14 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+	.tagline{
+			padding-top: 30vw;
+		font-size: 30px;
+		color: white;
+		}
+
+	.ourfeature
+	{
+		font-size: 30px;
+	}
 	.tip
 	{
 		background-image: -webkit-linear-gradient(280deg,#181830 15%, white 0%);
@@ -311,8 +321,7 @@
 
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px)
-{
+@media only screen and (min-width: 480px) and (max-width: 768px){
 	/** *****************************************************css relared to practise section********************/
 	.top_section_heading{
 		font-size: 5vw;
@@ -409,8 +418,7 @@
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px)
-{
+@media only screen and (min-width: 768px) and (max-width: 992px){
 
 	/** *****************************************************css relared to practise section********************/
 	.editor_btn_in_practise
@@ -449,8 +457,7 @@
 	}
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1024px)
-{
+@media only screen and (min-width: 992px) and (max-width: 1024px){
 	/** css for html_practise**/
 
 	.top_div
@@ -480,8 +487,7 @@
 	}
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1300px)
-{
+@media only screen and (min-width: 1024px) and (max-width: 1300px){
 	/** css for html_practise**/
 
 	.top_div
@@ -507,6 +513,6 @@
 		width: 20%;
 		height: 4%;
 		left: 40%;
-		font-size: 2vw
+		font-size: 2vw;
 	}
 }

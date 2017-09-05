@@ -1,10 +1,10 @@
 var app= angular.module('codetodevelop',['ui.router']);
 app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
-	$urlRouterProvider.otherwise('/mainpage');
+	$urlRouterProvider.otherwise('/');
 	$locationProvider.html5Mode(true);
 	$stateProvider
 	.state('mainpage',{
-			url: '/mainpage',
+			url: '/',
 			templateUrl: './templates/mainpage.html',
 			controller: 'mainpageController'
 	})
@@ -17,6 +17,11 @@ app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 		url:'/readymadecode',
 		templateUrl:'./templates/readymadecode.html',
 		controller:'readymadecodeController'
+	})
+	.state('javaCode',{
+		url:'/Code-Java',
+		templateUrl:'./templates/javaCode.html',
+		controller:'javaCodeController'
 	})
 	.state('signup',{
 		url:'/signup',
@@ -39,44 +44,40 @@ app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 		controller: 'html_practiseController'
 	})
 })
-app.controller('mainpageController',function($scope,$http){
-	console.log("hello");
 
-	$('.slide2').hide();
-	$('.slide3').hide();
-	$('.slide4').hide();
-	function call()
-	{
-		$('.slide1').fadeIn(3000,function(){
-			$('.slide1').fadeOut(5000,function(){
-				$('.slide2').fadeIn(3000,function(){
-					$('.slide2').fadeOut(2000,function(){
-						$('.slide3').fadeIn(1000,function(){
-							$('.slide3').fadeOut(2000,function(){
-								$('.slide4').fadeIn(2000,function(){
-									$('.slide4').fadeOut(2000,function(){
-										call();
-									})
-								})
-							})
-						})
-					})
-				})
-			})
-		})
+app.controller('mainpageController',function($scope,$rootScope,$state){
+
+	$rootScope.gotoRMC=function(){
+		/*if($rootScope.loggedIn==true)
+		{
+			$state.go('readymadecode');
+		}
+		else{
+			console.log("hehu");
+			$state.go('signin');
+		}*/
+		$state.go('readymadecode');
 	}
-	call();
-
-	/*$scope.show_div=false;
-	$scope.display=function(){
-		$scope.show_div=true;
-		$('.menu_btn').hide();
+	$rootScope.gotoPrac=function(){
+		if($rootScope.loggedIn==true)
+		{
+			$state.go('practice');
+		}
+		else{
+			$state.go('signin');
+		}
+	}
+	$rootScope.gotoTUT=function(){
+		if($rootScope.loggedIn==true)
+		{
+			$state.go('');
+		}
+		else{
+			$state.go('signin');
+		}
 	}
 
-	$scope.close_menu=function(){
-		$scope.show_div=false;
-		$('.menu_btn').show();
-	}*/
+
 
 	$scope.showFrontEndTips=function()
 	{
@@ -92,6 +93,7 @@ app.controller('mainpageController',function($scope,$http){
 		})
 	}
 })
+
 
 //added know
 app.controller('tipsController',function($scope,$rootScope,$http)
@@ -164,17 +166,89 @@ app.controller('tipsController',function($scope,$rootScope,$http)
 		})
 	}
 })
-//add finished
-app.controller('readymadecodeController',function($scope,$rootScope){
+app.controller('readymadecodeController',function($scope,$rootScope,$state,$http){
+
+	$scope.javaCode=function(){
+		$rootScope.code_type="java";
+		$state.go("javaCode");
+	}
 
 })
+app.controller('javaCodeController',function($state,$http,$scope,$rootScope){
+	$scope.click=1;
+	if($rootScope.code_type=="java")
+	{
+		$http({
+		method:'POST',
+		url:'http://localhost:8080/code/getjavaHeading',
+		data:{
+			code_type:$rootScope.code_type
+			}
+		}).then((response)=>{
+			$scope.javaCodeHeading=response.data;
+			console.log($scope.javaCodeHeading);
+			
+		})
 
-app.controller('signupController',function($scope,$rootScope){
-
+		$scope.getCode=function(){	
+			
+			$http({
+				method:'POST',
+				url:'http://localhost:8080/code/getdesiredCode',
+				data:{
+					heading:"base class"
+				}
+			}).then((response)=>{
+				console.log(response.data.codeContent);
+				$scope.javaCode=response.data.codeContent;
+			})
+		}
+	}
+	
+	
 })
 
-app.controller('signinController',function($scope,$rootScope){
+app.controller('signupController',function($scope,$rootScope,$http){
 
+	$scope.signup=function(){
+		$http({
+			method:'POST',
+			url:'http://localhost:8080/register/usersignup',
+			data:{
+				email:$scope.signupMail,
+				fullname:$scope.signupName,
+				password:$scope.signupPass,
+				confirm_password:$scope.signupCpass
+			}
+		}).then((res)=>{
+			console.log(res);
+		})
+	}
+})
+
+app.controller('signinController',function($scope,$rootScope,$http,$state){
+	$scope.signin=function(){
+		$http({
+			method:'POST',
+			url:'http://localhost/register/usersignin',
+			data:{
+				email:$scope.signinMail,
+				password:$scope.signinPass
+			}
+		}).then((res)=>{
+			console.log(res);
+			if($scope.signinPass==res)
+			{
+				$state.go('tips');
+				$rootScope.loggedIn=true;
+			}
+
+			else
+			{
+				$scope.signinError="Email-id or password doesn't match"
+			}
+		})
+	}
 })
 
 //changed now

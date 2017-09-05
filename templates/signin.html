@@ -9,12 +9,16 @@
 	}
 </style>
 <div class="signinPage">
-		<div id="mySidenav" class="sidenav">
+		<div id="mySidenav" class="sidenav text-center">
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <a href="#"><span class="sidenav_icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
-		  <a href="#"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true"></i></span>Practice</a>
-		  <a href="#"><span class="sidenav_icon"><i class="fa fa-cubes" aria-hidden="true"></i></span>Readymade Code</a>
-		  <a href="#"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true"></i></span>Gallery</a>
+		  <div class="Logo " style="text-align:center">
+				<img src="./img/logo.png" height="150" width="150">
+		  </div>
+		  <a href="#" ui-sref="mainpage"><span class="sidenav_icon"><i class="fa fa-home" aria-hidden="true" ></i></span>Home</a>
+		  <a href="#" ui-sref="tips"><span class="sidenav_icon"><i class="fa fa-lightbulb-o" aria-hidden="true" ></i></span>Tips for Developers</a>
+		  <a href="#" ng-click="gotoRMC()"><span class="sidenav_icon"><i class="fa fa-cubes" aria-hidden="true" ></i></span>Readymade Code</a>
+		  <a href="#" ng-click="gotoPrac()"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true" ></i></span>Practice</a>
+		  <a href="#" ng-click="gotoTUT()"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true" ></i></span>Tutorials</a>
 		</div>
 		<span class="hamburger" onclick="openNav()">&#9776;</span>
 		<div class="container signinsection">
@@ -26,7 +30,7 @@
 					<h1>Welcome</h1>
 					<h6>Register here for new account</h6>
 					<p>Code_To_Develop aims to help beginners who are keen to learn new technologies but unfotunately do not get the starting of the thread. So, to get to the right path and start off your journey towards your goal,register here. </p>
-					<button type="button" class="btn btn-primary" style=" background-color:#181830;border:1px solid #181830;color:white;font-size:15px;width:40%">Sign Up</button>
+					<button type="button" class="btn btn-primary" style=" background-color:#181830;border:1px solid #181830;color:white;font-size:15px;width:40%" ui-sref="signup">Sign Up</button>
 					
 				</div>
 				
