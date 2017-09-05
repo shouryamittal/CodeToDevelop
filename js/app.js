@@ -106,7 +106,6 @@ app.controller('tipsController',function($scope,$rootScope,$http)
 	$scope.tipsaved=false;
 	$scope.save_tips=function()
 	{
-		alert("save tips callde");
 		$http({
 			method: 'POST',
 			url: 'http://localhost:8000/tip_submit/submit_tip',
@@ -260,7 +259,6 @@ app.controller('signinController',function($scope,$rootScope,$http,$state){
 app.controller('practiseController',function($scope,$rootScope,$http){
 	console.log('practiseController callde');
 	$scope.first= function(){
-		alert("firstPage called");
 		console.log("hello");
 		$scope.PageOne=true;
 		$scope.PageTwo=false;
@@ -308,7 +306,6 @@ app.controller('html_practiseController',function($scope,$rootScope,$http){
 	$scope.PageFive=false;
 
 	$scope.firstPage= function(){
-		alert("hello");
 		$scope.PageOne=true;
 		$scope.PageTwo=false;
 		$scope.PageThree=false;
@@ -324,7 +321,6 @@ app.controller('html_practiseController',function($scope,$rootScope,$http){
 	}
 
 	$scope.secondPage=function(){
-		alert("hello");
 		$scope.PageOne=false;
 		$scope.PageTwo=true;
 		$scope.PageThree=false;
@@ -340,7 +336,6 @@ app.controller('html_practiseController',function($scope,$rootScope,$http){
 	}
 
 	$scope.thirdPage=function(){
-		alert("hello");
 		$scope.PageOne=false;
 		$scope.PageTwo=false;
 		$scope.PageThree=true;
