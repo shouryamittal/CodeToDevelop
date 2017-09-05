@@ -81,18 +81,26 @@ body {
 .new_tip_content_textarea
 {
 	padding-top: 10%;
-	 
 }
+
 .new_tip_content_textarea input
 {
 	margin-top: 9px;
 	margin-bottom: 9px;
 }
+
+.new_tip_content_textarea select
+{
+	height: 100px;
+	color: black;
+}
+
 .subhead
 {
 	text-align: center;
 	padding-bottom:5%;
 }
+
 .subhead h2
 {
 	color:#181830;
@@ -118,6 +126,19 @@ body {
 	height:40px;
 	width:200px;
 }
+/*changed now*/
+.tips_card
+{
+	margin-top: 50px;
+}
+
+.userGreeting
+{
+	color: white;
+	font-size: 12px;
+}
+/* chnegde ended*/
+
 .hamburger
 {
 	font-size:30px;

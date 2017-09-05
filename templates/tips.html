@@ -21,67 +21,50 @@
      	
      		<div class="tips_cards">
      			<div class="container">
-	     			<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-					  <li class="nav-item">
-					    <a class="nav-link active" id="front-end-tab" data-toggle="tab" href="#frontend" role="tab" aria-controls="home" aria-expanded="true">Web Frontend</a>
+	     			<ul class="nav nav-tabs flex-column flex-sm-row nav-fill" id="myTab" role="tablist">
+					  <li class="nav-item active">
+					    <a class="nav-link active" id="front-end-tab" data-toggle="tab" href="#frontend" role="tab" aria-controls="home" aria-expanded="true" ng-click="showFrontEndTips()">Web Frontend</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" id="back-end-tab" data-toggle="tab" href="#backend" role="tab" aria-controls="profile">Web Backend</a>
+					    <a class="nav-link" id="back-end-tab" data-toggle="tab" href="#backend" role="tab" aria-controls="profile" ng-click="showBackEndTips()">Web Backend</a>
 					  </li>
 
 					  <li class="nav-item">
-					    <a class="nav-link" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="profile">Java</a>
-					  </li>
-					  
+					    <a class="nav-link" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="profile" ng-click="javaTips()">Java</a>
+					  </li>  
 					</ul>
 
 					<div class="tab-content" id="myTabContent" >
-					  <div class="tab-pane fade " id="frontend" role="tabpanel" aria-labelledby="front-end-tab">
-					  	<div class="card text-center mb-3">
-						  <div class="card-header bg-transparent">Tip's Heading</div>
-						  <div class="card-body text-primary">
-						   
-						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.nbvbvnvbnvvsvsv
-						    ssv
-						    vsvsvsvsvsvsvsvsssvvsvsvsvsvsSome quick example text to build on the card title and make up the bulk of the card's content.nbvbvnvbnvvsvsv
-						    ssv
-						    vsvsvsvsvsvsvsvsssvvsvsvsvsvsvsvddvdvdvdvdvddvdvdvdvdvbdhbhbdvhbsdvhbsvsvsvsvsvsvsvsssvvsvsvsvsvsSome quick example text to build on the card title and make up the bulk of the card's content.nbvbvnvbnvvsvsv
-						    ssv
-						    vsvsvsvsvsvsvsvsssvvsvsvsvsvsvsvddvdvdvdvdvddvdvdvdvdvbdhbhbdvhbsdvhbsvhsbfhvbjfhvbsjhfvbj</p>
-						  </div>
-						  <div class="card-footer bg-transparent ">By ~ Author Name</div>
+					  <div class="tab-pane fade show active" id="frontend" role="tabpanel" aria-labelledby="front-end-tab">
+					  	<div class="card text-center mb-3 tips_card" ng-repeat="tip in frontEndTip">
+						  	<div class="card-header bg-transparent">{{tip.tip_heading}}</div>
+						 	<div class="card-body text-primary">
+						    	<p class="card-text" style="text-align: left">{{tip.tip_content}}</p>
+						  	</div>
+						  	<div class="card-footer bg-transparent ">By ~ {{tip.author_name}}
+						  	</div>
 						</div>
 					  </div>
+					 
+
 					  <div class="tab-pane fade" id="backend" role="tabpanel" aria-labelledby="back-end-tab">
-					  	<div class="card text-center mb-3">
-						  <div class="card-header bg-transparent">Tip's Heading</div>
+					  	<div class="card text-center mb-3 tips_card" ng-repeat="tip in backEndTip">
+						  <div class="card-header bg-transparent">{{tip.tip_heading}}</div>
 						  <div class="card-body text-primary">
-						   
-						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.nbvbvnvbnvvsvsv
-						    ssv
-						    vsvsvsvsvsvsvsvsssvvsvsvsvsvsSome quick example text to build on the card title and make up the bulk of the card's content.nbvbvnvbnvvsvsv
-						    ssv
-						    vsvsvsvsvsvsvsvsssvvsvsvsvsvsvsvddvdvdvdvdvddvdvdvdvdvbdhbhbdvhbsdvhbsvsvsvsvsvsvsvsssvvsvsvsvsvsSome quick example text to build on the card title and make up the bulk of the card's content.nbvbvnvbnvvsvsv
-						    ssv
-						    vsvsvsvsvsvsvsvsssvvsvsvsvsvsvsvddvdvdvdvdvddvdvdvdvdvbdhbhbdvhbsdvhbsvhsbfhvbjfhvbsjhfvbj</p>
+						    <p class="card-text" style="text-align: left">{{tip.tip_content}}</p>
 						  </div>
-						  <div class="card-footer bg-transparent ">By ~ Author Name</div>
+						  <div class="card-footer bg-transparent ">By ~ {{tip.author_name}}</div>
 						</div>
 					  </div>
+					  
 					  <div class="tab-pane fade" id="java" role="tabpanel" aria-labelledby="kava-tab">
-					  	<div class="card text-center mb-3">
-						  <div class="card-header bg-transparent">Tip's Heading</div>
+					  	<div class="card text-center mb-3 tips_card" ng-repeat="tip in javaTip">
+						  <div class="card-header bg-transparent">{{tip.tip_heading}}</div>
 						  <div class="card-body text-primary">
 						   
-						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.nbvbvnvbnvvsvsv
-						    ssv
-						    vsvsvsvsvsvsvsvsssvvsvsvsvsvsSome quick example text to build on the card title and make up the bulk of the card's content.nbvbvnvbnvvsvsv
-						    ssv
-						    vsvsvsvsvsvsvsvsssvvsvsvsvsvsvsvddvdvdvdvdvddvdvdvdvdvbdhbhbdvhbsdvhbsvsvsvsvsvsvsvsssvvsvsvsvsvsSome quick example text to build on the card title and make up the bulk of the card's content.nbvbvnvbnvvsvsv
-						    ssv
-						    vsvsvsvsvsvsvsvsssvvsvsvsvsvsvsvddvdvdvdvdvddvdvdvdvdvbdhbhbdvhbsdvhbsvhsbfhvbjfhvbsjhfvbj</p>
+						    <p class="card-text" style="text-align: left">{{tip.tip_content}}</p>
 						  </div>
-						  <div class="card-footer bg-transparent ">By ~ Author Name</div>
+						  <div class="card-footer bg-transparent ">By ~ {{tip.author_name}}</div>
 						</div>
 					  </div>
 					 
@@ -95,22 +78,34 @@
      <div class="col-md-3 new_tip">
      	<div class="container">
      		<div class="new_tip_content_heading">
-     			<img src="img/logo3.png" height="150" width="150">
+     			<img src="img/logo3.png" height="110" width="150">
      		</div>
      		<div class="new_tip_content_textarea">
      			<div class="subhead">
      				<h2>Got a new tip!</h2>
      				<p>Get it featured on CODE_TO_DEVELOP</p>
      			</div>
-     			<div class="form-group">
-				  <input class="form-control" placeholder="Tip Heading" ng-model="tipHeading">
-				  <textarea class="form-control" rows="10" id="comment" placeholder="Give Your super Tip to help Other developers" ng-model="tipArea"></textarea>
-				  <input class="form-control" placeholder="Your Name" ng-model="userName">
-				</div>
-     		</div>
-     		<div class="Submit_Your_Tip">
-     			<button type="button" class="btn btn-outline-primary btn-lg"><span style="color:white">Submit Your Tip</span></button>
-     			<p ng-model="userGreet"></p>
+
+     			<div class="text-center">
+     				<p class="userGreeting" ng-show="tipsaved">Your tip has been saved. It will be displayed soon!!!!!</p>
+     			</div>
+
+     			<form name="tip_form" novalidate>
+	     			<div class="form-group">
+					  <input type="text" class="form-control" placeholder="Tip Heading" ng-model="tip_heading" required>
+					  <textarea type="text" class="form-control" rows="10" id="comment" placeholder="Give Your super Tip to help Other developers" ng-model="tip_content" required></textarea>
+					  <input type="text" class="form-control" placeholder="Your Name" ng-model="author_name" required>
+					  <select class="form-control" required ng-model="tip_language">
+					  	<option>Web Frontend</option>
+					  	<option>Web Backend</option>
+					  	<option>Java</option>
+					  </select>
+					</div>
+
+					<div class="Submit_Your_Tip">
+		     			<button type="button" class="btn btn-outline-primary btn-lg" ng-disabled="tip_form.$invalid" ng-click="save_tips()"><span style="color:white">Submit Your Tip</span></button>
+		     		</div>
+				</form>
      		</div>
      	</div>
      </div>
@@ -123,5 +118,7 @@
 	function closeNav() {
 	    document.getElementById("mySidenav").style.width = "0";
 	}
+
+
 	</script>
      

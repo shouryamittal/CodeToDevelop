@@ -22,70 +22,79 @@
 
 <span class="hamburger" onclick="openNav()">&#9776;</span>
 
+<!--changed now-->
 <div class="jumbotron jumbotron-fluid">
   <div class="container" style="background-color: white">
-  <div id="page1">
-    <div style="padding-top: 2vw">
-    	<h4 class="display-6">Ques 1. Which tag is used to for linking a .css file in .html file?</h4>
-    	<ol type="i">
-    		<li>rel</li>
-    		<li>&lta&gt &lt/a&gt</li>
-    		<li>&ltlink&gt &lt/link&gt</li>
-    	</ol>
+    <div id="page1" style="padding-top: 2vw" ng-show="PageOne">
+        <div ng-repeat="question in ques">
+    	   <h4 class="display-6"><b>Ques.</b> {{question.ques}}</h4>
+        	<ol type="i">
+        		<li>{{question.option1}}</li>
+        		<li>{{question.option2}}</li>
+        		<li>{{question.option3}}</li>
+        	</ol>
+        </div>
     </div>
 
-    <div class="">
-    	<h4 class="display-6">Ques 2. Which tag is used to link .js file in .html file?</h4>
-    	<ol type="i">
-    		<li>&lta&gt &lt/a&gt</li>
-    		<li>&ltlink&gt &lt/link&gt</li>
-    		<li>&ltscript&gt &lt/script&gt</li>
-    	</ol>
+    <div id="page2" style="padding-top: 2vw" ng-show="PageTwo">
+        <div ng-repeat="question in SecondPageQuestions">
+           <h4 class="display-6"><b>Ques.</b> {{question.ques}}</h4>
+            <ol type="i">
+                <li>{{question.option1}}</li>
+                <li>{{question.option2}}</li>
+                <li>{{question.option3}}</li>
+            </ol>
+        </div>
     </div>
 
-    <div class="">
-    	<h4 class="display-6">Ques 3. Which attribute must be used in <a></a> tag for linking? </h4>
-    	<ol type="i">
-    		<li>rel</li>
-    		<li>href</li>
-    		<li>class</li>
-    	</ol>
-    </div>
-    
-    <div class="">
-    	<h4 class="display-6">Ques 4. Where do we specify the <tiitle></title>? </h4>
-    	<ol type="i">
-    		<li>head</li>
-    		<li>body</li>
-    		<li>section</li>
-    	</ol>
+    <div id="page3" style="padding-top: 2vw" ng-show="PageThree">
+        <div ng-repeat="question in ThirdPageQuestions">
+           <h4 class="display-6"><b>Ques.</b> {{question.ques}}</h4>
+            <ol type="i">
+                <li>{{question.option1}}</li>
+                <li>{{question.option2}}</li>
+                <li>{{question.option3}}</li>
+            </ol>
+        </div>
     </div>
 
-    <div class="">
-    	<h4 class="display-6">Ques 5. Can we write javascript and css in html page? </h4>
-    	<ol type="i">
-    		<li>No</li>
-    		<li>YES</li>
-    		<li>Don't know</li>
-    	</ol>
+    <div id="page4" style="padding-top: 2vw" ng-show="PageFour">
+        <div ng-repeat="question in FourthPageQuestions">
+           <h4 class="display-6"><b>Ques.</b> {{question.ques}}</h4>
+            <ol type="i">
+                <li>{{question.option1}}</li>
+                <li>{{question.option2}}</li>
+                <li>{{question.option3}}</li>
+            </ol>
+        </div>
     </div>
+
+    <div id="page5" style="padding-top: 2vw" ng-show="PageFive">
+        <div ng-repeat="question in FifthPageQuestions">
+           <h4 class="display-6"><b>Ques.</b> {{question.ques}}</h4>
+            <ol type="i">
+                <li>{{question.option1}}</li>
+                <li>{{question.option2}}</li>
+                <li>{{question.option3}}</li>
+            </ol>
+        </div>
     </div>
 
     <div>   
         <nav aria-label="html practice pages" style="text-align: center;">
             <ul class="pagination pagination-lg">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                
+                <li class="page-item"><a class="page-link" ng-click="firstPage()">1</a></li>
+                <li class="page-item"><a class="page-link" ng-click="secondPage()">2</a></li>
+                <li class="page-item"><a class="page-link" ng-click="thirdPage()">3</a></li>
+                <li class="page-item"><a class="page-link" ng-click="fourthPage()">4</a></li>
+                <li class="page-item"><a class="page-link" ng-click="fifthPage()">5</a></li>
             </ul>
         </nav>
     </div>
   </div>
 </div>
-
+<!--changed finished-->
 <script>
 	function openNav() {
 	    document.getElementById("mySidenav").style.width = "300px";
