@@ -1,0 +1,82 @@
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+
+<div class="top_div text-center">
+	<div class="text-center">
+		<p class="html_practise_heading text-center">CSS PRACTISE</p>
+		<p class="html_practise_subheading">Way to learn, practise and grow, practise and grow</p>
+		<button type="submit" class="btn btn-lg editor_btn" style="border: 1px solid #43B05F;">Go To Editor</button>
+	</div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a ui-sref="mainpage"><span class="sidenav_icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
+	<a href="#"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true"></i></span>Practice</a>
+	<a href="#"><span class="sidenav_icon"><i class="fa fa-cubes" aria-hidden="true"></i></span>Readymade Code</a>
+	<a href="#"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true"></i></span>Gallery</a>
+</div>
+
+<span class="hamburger" onclick="openNav()">&#9776;</span>
+
+<!--changed now-->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container" style="background-color: white">
+    <div id="page1" style="padding-top: 2vw" ng-show="CSSPageOne">
+        <div ng-repeat="question in FirstPageQuestions">
+    	   <h4 class="display-6"><b>Ques.</b> {{question.ques}}</h4>
+        	<ol type="i">
+        		<li>{{question.option1}}</li>
+        		<li>{{question.option2}}</li>
+        		<li>{{question.option3}}</li>
+        	</ol>
+        </div>
+    </div>
+
+    <div id="page2" style="padding-top: 2vw" ng-show="CSSPageTwo">
+        <div ng-repeat="question in SecondPageQuestions">
+           <h4 class="display-6"><b>Ques.</b> {{question.ques}}</h4>
+            <ol type="i">
+                <li>{{question.option1}}</li>
+                <li>{{question.option2}}</li>
+                <li>{{question.option3}}</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="page3" style="padding-top: 2vw" ng-show="CSSPageThree">
+        <div ng-repeat="question in ThirdPageQuestions">
+           <h4 class="display-6"><b>Ques.</b> {{question.ques}}</h4>
+            <ol type="i">
+                <li>{{question.option1}}</li>
+                <li>{{question.option2}}</li>
+                <li>{{question.option3}}</li>
+            </ol>
+        </div>
+    </div>
+
+    <div>   
+        <nav aria-label="html practice pages" style="text-align: center;">
+            <ul class="pagination pagination-lg">
+                
+                <li class="page-item"><a class="page-link" ng-click="firstCSSPage()">1</a></li>
+                <li class="page-item"><a class="page-link" ng-click="secondCSSPage()">2</a></li>
+                <li class="page-item"><a class="page-link" ng-click="thirdCSSPage()">3</a></li>
+            </ul>
+        </nav>
+    </div>
+  </div>
+</div>
+<!--changed finished-->
+<script>
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "300px";
+	}
+
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	}
+</script>

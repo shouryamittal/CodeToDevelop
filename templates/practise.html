@@ -11,7 +11,7 @@
 		  <a href="#" ui-sref="mainpage"><span class="sidenav_icon"><i class="fa fa-home" aria-hidden="true" ></i></span>Home</a>
 		  <a href="#" ui-sref="tips"><span class="sidenav_icon"><i class="fa fa-lightbulb-o" aria-hidden="true" ></i></span>Tips for Developers</a>
 		  <a href="#" ng-click="gotoRMC()"><span class="sidenav_icon"><i class="fa fa-cubes" aria-hidden="true" ></i></span>Readymade Code</a>
-		  <a href="#" ng-click="gotoPrac()"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true" ></i></span>Practice</a>
+		  <a href="#" ui-sref="practise"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true" ></i></span>Practice</a>
 		  <a href="#" ng-click="gotoTUT()"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true" ></i></span>Tutorials</a>
 		</div>
 		<span class="hamburger" onclick="openNav()">&#9776;</span>
@@ -43,7 +43,7 @@
 					<img src="./img/css1.png" class="css_img">
 				</div>
 
-				<button type="button" class="btn btn-block css_prac_btn" style="border: 3px solid rgba(213, 0, 0,0.5);">CSS Practise</button>
+				<button type="button" class="btn btn-block css_prac_btn" ui-sref="css_practise" style="border: 3px solid rgba(213, 0, 0,0.5);" ng-click="second()">CSS Practise</button>
 			</div>
 
 			<div class="col-md-3 ">

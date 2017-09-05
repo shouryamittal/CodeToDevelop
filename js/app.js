@@ -43,6 +43,11 @@ app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 		templateUrl: './templates/html_practise.html',
 		controller: 'html_practiseController'
 	})
+	.state('css_practise',{
+		url:'/css_practise',
+		templateUrl: './templates/css_practise.html',
+		controller: 'css_practiseController'
+	})
 })
 
 app.controller('mainpageController',function($scope,$rootScope,$state){
@@ -273,6 +278,21 @@ app.controller('practiseController',function($scope,$rootScope,$http){
 			console.log($rootScope.ques);
 		})
 	}
+
+	$scope.second=function(){
+		$scope.CSSPageOne=true;
+		$scope.CSSPageTwo=false;
+		$scope.CSSPageThree=false;
+
+		$http({
+			method:'GET',
+			url: 'http://localhost:8000/cssques/getFirst5CssQues'
+		}).then(function(response){
+			console.log(response.data);
+			$rootScope.FirstPageQuestions=response.data;
+			console.log($rootScope.FifthPageQuestions);
+		})
+	}
 })
 
 //add fiished
@@ -369,3 +389,53 @@ app.controller('html_practiseController',function($scope,$rootScope,$http){
 })
 
 //add finish
+
+//css practise
+app.controller('css_practiseController',function($scope,$rootScope,$http){
+
+	$scope.CSSPageOne=true;
+	$scope.CSSPageTwo=false;
+	$scope.CSSPageThree=false;
+
+	$scope.firstCSSPage=function(){
+		$scope.CSSPageOne=true;
+		$scope.CSSPageTwo=false;
+		$scope.CSSPageThree=false;
+
+		$http({
+			method:'GET',
+			url: 'http://localhost:8000/cssques/getFirst5CssQues'
+		}).then(function(response){
+			console.log(response.data);
+			$scope.FirstPageQuestions=response.data;
+		})
+	}
+
+	$scope.secondCSSPage=function(){
+		$scope.CSSPageOne=false;
+		$scope.CSSPageTwo=true;
+		$scope.CSSPageThree=false;
+
+		$http({
+			method: 'GET',
+			url: 'http://localhost:8000/cssques/getSecond5CssQues'
+		}).then(function(response){
+			console.log(response.data);
+			$scope.SecondPageQuestions=response.data;
+		})
+	}
+
+	$scope.thirdCSSPage=function(){
+		$scope.CSSPageOne=false;
+		$scope.CSSPageTwo=false;
+		$scope.CSSPageThree=true;
+
+		$http({
+			method: 'GET',
+			url: 'http://localhost:8000/cssques/getThird5CssQues'
+		}).then(function(response){
+			console.log(response.data);
+			$scope.ThirdPageQuestions=response.data;
+		})
+	}
+})
