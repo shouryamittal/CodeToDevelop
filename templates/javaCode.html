@@ -1,13 +1,53 @@
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="./css/responsive.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./css/prism.css">
+<script type="text/javascript" src="./js/prism.js"></script>
+
 <style type="text/css">
 	.sidenav
 	{
 		z-index:4;
 	}
 </style>
-<div id="mySidenav" class="sidenav text-center">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#"><span style="font-size:30px;color:#181830;font-family: 'Encode Sans Condensed', sans-serif;"><span><img src="./img/logo.png" height="50" width="60"></span>Java Code</span></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-end" style="padding-right:20px;float:right">
+      <li class="nav-item ">
+        <a class="nav-link" href="#" ui-sref="mainpage"><span style="font-size:15px">Home</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#" ui-sref="tips"><span style="font-size:15px">Tips For Developers</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" ng-click="gotoTUT()"><span style="font-size:15px">Tutorials</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span style="font-size:15px">Practice</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">HTML Practice</a>
+          <a class="dropdown-item" href="#">JavaScript Practice</a>
+          <a class="dropdown-item" href="#">Java Practice</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--<div class="top_div text-center">
+	<div class="text-center">
+		<p class="html_practise_heading text-center">Readymade Code</p>
+		<p class="html_practise_subheading">Make your development faster and life easier</p>
+		<button type="submit" class="btn btn-lg editor_btn" style="border: 1px solid #43B05F;">Go To Editor</button>
+	</div>
+</div>-->
+
+<!--<div id="mySidenav" class="sidenav text-center" >
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <div class="Logo " style="text-align:center">
 				<img src="./img/logo.png" height="150" width="150">
@@ -17,179 +57,49 @@
 		  <a href="#" ng-click="gotoRMC()"><span class="sidenav_icon"><i class="fa fa-cubes" aria-hidden="true" ></i></span>Readymade Code</a>
 		  <a href="#" ng-click="gotoPrac()"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true" ></i></span>Practice</a>
 		  <a href="#" ng-click="gotoTUT()"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true" ></i></span>Tutorials</a>
-		</div>
-		<span class="hamburger" onclick="openNav()">&#9776;</span>
+</div>
+<span class="hamburger" onclick="openNav()">&#9776;</span>-->
+
 	<div class="col-md-3 quesNav" >
-		<ul class="list-group">
-		  <a><li class="list-group-item active" ng-click="click=1">Creating a class and creating its object in main()</li></a>
-		  <a><li class="list-group-item" ng-click="click=2"> Function Overriding in Java</li></a>
-		  <a><li class="list-group-item active" ng-click="click=3">Function Overloading in Java</li></a>
+		<p style="font-size:24px"><i class="fa fa-flask" aria-hidden="true"></i>Topics</p>
+		<hr>
+		<ul class="list-group" ng-repeat="head in headings">
+		  <a><li class="list-group-item" ng-click="getCode(head.heading);">{{head.heading}}</li></a>
+		 <!-- <a><li class="list-group-item" ng-click="click=2"> Function Overriding in Java</li></a>
+		  <a><li class="list-group-item " ng-click="click=3">Function Overloading in Java</li></a>
 		  <a><li class="list-group-item" ng-click="click=4">Creating interface and get it implemented by a class </li></a>
-		  <a><li class="list-group-item active" ng-click="click=5">Creating Nested Class in Java</li></a>
+		  <a><li class="list-group-item " ng-click="click=5">Creating Nested Class in Java</li></a>-->
 		</ul>
 	</div>
 
 
-<div class="col-md-offset-1 col-md-8 codeSpace">
+<div class="col-md-4 codeSpace">
 	<div class="container">
-		<p style="font-size:24px"class="" ng-show="click==1">Creating a class and creating its object in main()</p>
-		<p style="font-size:24px" class="" ng-show="click==2">Function Overriding in Java</p>
-		<p style="font-size:24px" class="" ng-show="click==3">Function Overloading in Java</p>
-		<p style="font-size:24px" class="" ng-show="click==4">Creating interface and get it implemented by a class </p>
-		<p style="font-size:24px" class="" ng-show="click==5">Creating nested class in Java </p>
 		<div class="row">
+			<div class="codeArea" class="col-md-6">
+				<p style="font-size:24px;padding-left:20px" class="">{{javaCode.heading}}</p>
+				<hr>
+				<div>
 			
-		
-		<div class="codeArea" class="col-md-6">
-		<div ng-show="click==1">
-			
-				<p style="padding:50px">
-				<code >
-				class MyClass<br>
-				{<br>
-					int a; //class level data member<br>
-					MyClass()<br>
-					{<br>
-						a=10;<br>
-					}<br>
-					public static void main(String ...s)<br>
-					{<br>
-						new MyClass();//creating object of class<br>
-					}<br>
-				}
-				</code>
-			</p>
-		</div>
-
-		<div ng-show="click==2">
-			<p class="text-center"></p>
-				<p style="padding:50px">
-				<code >
-				class Base<br>
-				{<br>
-					int a; //class level data member<br>
-					MyClass()<br>
-					{<br>
-						a=10;<br>
-					}<br>
-					pubic void show()<br>
-					{<br>
-						System.out.pritnln("I am in base Class");<br>
-
-					}<br>
-
-					
-				}<br>
-				public class Child extends Base<br>
-				{<br>
-					public void show()<br>
-					{<br>
-						System.out.println("I am in Child");<br>
-					}<br>
-					public static void main(String ...s)<br>
-					{<br>
-						new Child();//creating object of class<br>
-					}<br>
-				}
-				</code>
-			</p>
-		</div>
-
-
-
-		<div ng-show="click==3">
-			<p class="text-center"></p>
-				<p style="padding:30px">
-				<code >
-				class MyClass<br>
-				{<br>
-					int a; //class level data member<br>
-					MyClass()<br>
-					{<br>
-						a=10;<br>
-					}<br>
-					pubic void show()<br>
-					{<br>
-						System.out.pritnln("Hello programmer");<br>
-
-					}<br>
-					public void show(int x)<br>
-					{<br>
-						System.out.println("Value of x is "+x);<br>
-					}<br>
-
-					public static void main(String ...s)<br>
-					{<br>
-						new MyClass();//creating object of class<br>
-					}<br>
-				}<br>
-				</code>
-			</p>
-		</div>
-
-		<div ng-show="click==4">
-			<p class="text-center"></p>
-				<p style="padding:30px">
-				<code>
-					class MyInterface<br>
-					{<br>
-						void show();<br>
-					}<br>
-				</code><br>
-				<code>
-					class MyClass implements MyInterface<br>
-					{<br>
-					int a; //class level data member<br>
-					MyClass()<br>
-					{<br>
-						a=10;<br>
-					}<br>
-					pubic void show()// implementing the method of interface MyInterface<br>
-					{<br>
-						System.out.pritnln("Hello programmer");<br>
-
-					}<br>
-					public static void main(String ...s)<br>
-					{<br>
-						new MyClass();//creating object of class<br>
-					}<br>
-				</code>
-
-			</p>
-		</div>
-
-		<div ng-show="click==5">
-			<p class="text-center"></p>
-				<p style="padding:30px">
-				<code >
-				class Outer<br>
-				{<br>
-					int a; //class level data member<br>
-					MyClass()<br>
-					{<br>
-						a=10;<br>
-					}<br>
-					static class Inner // inner Class<br>
-					{<br>
-						System.out.pritnln("Hello programmer i am a Inner class");<br>
-						public void show(int x)<br>
-						{<br>
-							System.out.println("Value of x is "+x);<br>
-						}<br>
-					}
-
-					public static void main(String ...s)<br>
-					{<br>
-						Inner i=new Inner();<br>//creating object of inner class<br>
-						i.show();
-					}<br>
-				}<br>
-				</code>
-			</p>
+<pre style="background-color:white;border:none;font-size:15px">
+<code class="language-jade" >
+{{javaCode.codeContent}}
+</code>
+</pre>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-</div>
+
+<div class="col-md-4 description">
+	<p style="font-size:24px"><i style="padding-right:10px" class="fa fa-newspaper-o" aria-hidden="true"></i>Description for Usage</p>
+	<hr>
+	<div class="descContent">
+		<article>
+			{{javaCode.desp}}
+		</article>
+	</div>	
 </div>
 </div>
 <script>

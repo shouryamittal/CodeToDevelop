@@ -4,8 +4,20 @@ body {
   background-size: cover*/
   height: 100%;
   width: 100%;
-}
+  font-family: 'Encode Sans Condensed', sans-serif;
 
+}
+#myTabContent::-webkit-scrollbar {
+    width: 0.7em;
+}
+ 
+#myTabContent::-webkit-scrollbar-track {
+    background-color: white;
+}
+ 
+#myTabContent::-webkit-scrollbar-thumb {
+  background-color: #181830;
+}
 
 
 /*----------------------------Css for Tips-----------------------------------------------------------------------*/
@@ -22,6 +34,7 @@ body {
 	font-size: 50px;
 	padding-top: 4%;
 	padding-left: 2%;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	
 }
 .heading_icon
@@ -30,17 +43,20 @@ body {
 }
 .tips_cards
 {
-	margin-top: 10%;
+	margin-top: 6%;
+	
 	height:100%;
 	
 }
 .tips_cards .card
 {
 	border:1px solid #43B045;
+	margin-right:30px;
 }
 .tips_cards ul li a
 {
 	font-size: 18px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	color:#43B045;
 }
 .tips_cards .card-header 
@@ -48,23 +64,26 @@ body {
 	font-size: 20px;
 	color:#181830;
 	font-weight: bolder;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	border-bottom:1px solid #43B045;
 }
 .tips_cards .card-footer
 {
-	font-size: 20px;
+	font-size: 12px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	color:#181830;
 	border-top:1px solid #43B045;
 }
 .tips_cards .tab-pane .card-text
 {
 	font-size: 15px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	color:#78909c;
 }
 #myTabContent
 {
 	margin-top: 30px;
-	height: 350px;
+	height: 400px;
 	overflow: auto;
 }
 .new_tip
@@ -80,7 +99,7 @@ body {
 }
 .new_tip_content_textarea
 {
-	padding-top: 10%;
+	padding-top: 7%;
 }
 
 .new_tip_content_textarea input
@@ -106,6 +125,7 @@ body {
 	color:#181830;
 	font-weight: bolder;
 	font-size: 30px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 }
 .subhead p
 {
@@ -113,15 +133,16 @@ body {
 }
 .Submit_Your_Tip
 {
-	padding-top: 10%;
+	margin-top: 3vw;
 	text-align: center;
-	padding-bottom: 12.5%;
+	padding-bottom: 3vw;
 }
 .Submit_Your_Tip button
 {
 	font-size: 15px;
 	font-weight: bold;
 	border:2px solid #181830;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	background-image: -webkit-linear-gradient(64.5deg,#181830 50%, 	#43B05F 50%);
 	height:40px;
 	width:200px;
@@ -129,13 +150,14 @@ body {
 /*changed now*/
 .tips_card
 {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .userGreeting
 {
 	color: white;
 	font-size: 12px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 }
 /* chnegde ended*/
 
@@ -167,6 +189,7 @@ body {
     padding: 15px 15px 15px 20px;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Encode Sans Condensed', sans-serif;
     color: #43B05F;
     display: block;
     transition: 0.3s;
@@ -183,6 +206,7 @@ body {
     top: 0;
     right: 25px;
     font-size: 36px;
+    font-family: 'Encode Sans Condensed', sans-serif;
     margin-left: 50px;
 }
 .sidenav .closebtn :hover
@@ -238,12 +262,14 @@ body {
 {
 	color:white;
 	font-size: 40px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	font-weight: bolder;
 	padding: 0px 45px 10px 25px;
 }
 .rmcleftText p
 {
 	font-size: 12px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	padding: 0px 45px 10px 25px;
 }
 .bottomNav
@@ -271,7 +297,8 @@ body {
 }
 .rmcright button
 {
-	width:80%;color:#43B05F;font-size:20px;border:2px solid #181830;background-color:#181830
+	width:80%;color:#43B05F;font-size:20px;
+	font-family: 'Encode Sans Condensed', sans-serif;border:2px solid #181830;background-color:#181830
 }
 .rmcDiv
 {
@@ -320,6 +347,7 @@ body {
 .signText
 {
 	font-size: 24px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	color:white;
 	padding-top:5vw;
 	padding-right:2vw;
@@ -354,6 +382,7 @@ body {
 	background-color: #43B05F;
 	width: 100%;
 	font-size: 12px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 }
 
 .myform
@@ -376,6 +405,7 @@ body {
 
 	color:white;
 	font-size: 30px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 }
 .buttons
 {
@@ -391,6 +421,7 @@ body {
  {
  	width:100%;
  	font-size: 12px;
+ 	font-family: 'Encode Sans Condensed', sans-serif;
  }
 .form-group
 {
@@ -435,6 +466,7 @@ body {
 .signinHeading p
 {
 	font-size: 30px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	color:white;
 }
 .signinForm
@@ -461,6 +493,7 @@ body {
 	width:110%;
 	border-radius: 60px;
 	font-size: 18px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	border:1px solid #43B05F;
 }
 .signinButton button:hover
@@ -478,6 +511,7 @@ body {
 	
 	color: grey;
 	font-size: 12px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	
 }
 .signinBottom a:hover
@@ -510,11 +544,13 @@ body {
 {
 	color:white;
 	font-size: 30px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 }
 .welcomeText h6
 {
 	
 	font-size: 15px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	color:#181830;
 }
 .welcomeText p
@@ -522,42 +558,38 @@ body {
 	padding-top: 1vw;
 	padding-bottom: 1vw;
 	font-size: 12px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	color: #181830;
 }
 
 /*css for practise section*/
 
+
 .top_section
 {
-	background: url('../img/5.jpg') no-repeat;
-	background-size: cover;
+
 	width: 100%;
 	height:100%;
+	
+	
 }
 
 .top_section_heading{
 	color: white;
-	font-size: 2.5vw;
-	padding-top: 6%;
+	
+	font-family: 'Encode Sans Condensed', sans-serif;
+	padding-top: 1%;
+	text-align: center;
 }
-
-.top_section_subheading{
-	color: #43B05F;	
-	font-size: 1.3vw;
-}
-
-.editor_btn_in_practise
+.pracimg
 {
-	width: 10%;
-	height: 10%;
-	background: transparent;
-	color: white;
-	font-size: 2vw;
+	padding-right:20px;
+	
 }
-
-.editor_btn_in_practise:hover
+.top_section_heading p
 {
-	color:#43B045;
+	font-size: 3vw;
+	color: #43B05F;
 }
 
 .cards_row
@@ -565,6 +597,7 @@ body {
 	padding-top: 4vw;
 	padding-left: 3vw;
 	padding-right: 3vw; 
+	padding-bottom: 3vw;
 }
 
 .card1
@@ -592,78 +625,90 @@ body {
 	padding-top: 20%;
 	padding-left: 24%
 }
-
+	
 .htmlPractise_tint{
-	/*background: linear-gradient(rgba(255, 87, 34,0.2),rgba(255, 87, 34,0.2));*/
-	border: 2px solid rgba(255, 87, 34,0.2);
+	/*background: linear-gradient(rgba(248, 49, 78,0.9),rgba(248, 49, 78,0.9));*/
+	border: 5px solid white;
+	background:url('../img/htmlimg.png') ;
+	background-size: cover;
+	height:300px;
+
+}
+.tint1
+{
+	background: linear-gradient(rgba(24, 24, 48,0.8),rgba(24, 24, 48,0.8));
+	position: absolute;
+	height:100%;
+	width:100%;
+
+}
+.text_on_tint
+{
+	font-size: 4vw;
+	color:white;
+	text-align: center;
+	padding-top: 7vw;
+	font-family: 'Encode Sans Condensed', sans-serif;
+}
+.tint1:hover
+{
+	background: linear-gradient(rgba(24, 24, 48,0.7),rgba(24, 24, 48,0.7));
 }
 /*rgba(255, 87, 34,0.9)
 rgba(213, 0, 0,0.4)*/
 .cssPractise_tint
 {
+	background:url('../img/cssimg.png') ;
+	background-size: cover;
+	height:300px;
 	/*background: linear-gradient(rgba(213, 0, 0,0.5),rgba(213, 0, 0,0.5));*/
 }
 /*rgba(85, 139, 47,0.7),rgba(255, 196, 0,0.7)*/
 
 .jsPractise_tint
 {
+	background:url('../img/jsimg.jpg') ;
+	background-size: cover;
+	height:300px;
 	/*background: linear-gradient(rgba(85, 139, 47,0.7),rgba(85, 139, 47,0.7));*/
 }
 
-.javaPractise_tint{
+.javaPractise_tint
+{
+	background:url('../img/javaimg.png') ;
+	background-size: cover;
+	height:300px;
 	/*background: linear-gradient(rgba(255, 196, 0,0.7),rgba(255, 196, 0,0.7));	*/
 }
-
-.html_prac_btn
+.cards_row button
 {
-	border: 3px solid rgba(255, 87, 34,0.5);
-	font-size: 1.3vw;
+	font-size: 1.5vw;
+	border: 2px solid #181830;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	background-color: transparent;
-	color: white;
+	color: #181830;
 	margin-top: 20px
 }
+
 
 .html_prac_btn:hover
 {
 	color: rgba(255, 87, 34,0.5);
 }	
 
-.css_prac_btn
-{
-	border: 3px solid rgba(213, 0, 0,0.5);
-	font-size: 1.3vw;
-	background-color: transparent;
-	color: white;
-	margin-top: 20px
-}
 
 .css_prac_btn:hover
 {
 	color: rgba(213, 0, 0,0.5)
 }
 
-.js_prac_btn
-{
-	border: 3px solid rgba(85, 139, 47,0.7);
-	font-size: 1.3vw;
-	background-color: transparent;
-	color: white;
-	margin-top: 20px
-}
 
 .js_prac_btn:hover
 {
 	color: rgba(85, 139, 47,0.7)
 }
 
-.java_prac_btn
-{
-	border: 3px solid rgba(255, 196, 0,0.6);
-	font-size: 1.3vw;
-	background-color: transparent;
-	color: white;
-	margin-top: 20px
-}
+
 
 .java_prac_btn:hover
 {
@@ -673,7 +718,7 @@ rgba(213, 0, 0,0.4)*/
 /** extra css for html_practise section*/
 .top_div
 {
-	background: url('../img/5.jpg');
+	background: url('../img/3D.jpg') fixed no-repeat;
 	background-size: cover;
 	height: 20vw;
 	width: 100%;
@@ -684,6 +729,7 @@ rgba(213, 0, 0,0.4)*/
 {
 	color: white;
 	font-size: 2.5vw;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	padding-top: 6vw
 }
 
@@ -691,6 +737,7 @@ rgba(213, 0, 0,0.4)*/
 {
 	color: #43B05F;
 	font-size: 1.6vw;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	margin-top: -10px;
 }
 
@@ -703,6 +750,12 @@ rgba(213, 0, 0,0.4)*/
 ol
 {
 	font-size: 15px
+	font-family: 'Encode Sans Condensed', sans-serif;
+}
+.jumbotron
+{
+	margin-top: 0px !important;
+}
 }
 
 /****************************CSS for javCODE********************************************************************/
@@ -711,27 +764,62 @@ ol
 	position: fixed;
 	width:100%;
 	height:100%;
-	margin-top: 100px;
+	margin-top: 30px;
+	padding-top: 0px;
+	padding-bottom: 40px;
+	background-color: white;
+	margin-left: 40px;
+	margin-right: 10px;
+	box-shadow: 2px 3px 6px grey;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	
 }
 .codeSpace
 {
-	padding-top: 70px;
+	margin-top: 30px;
+	padding-bottom: 40px;
+	margin-right: 10px;
 
 }
 .quesNav .list-group a
 {
 	margin-top:20px;
 	font-size: 16px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 }
 .codeArea
 {
 	height:100%;
 	width:100%;
-	box-shadow: 2px 3px 6px grey;
+	box-shadow: 1px 2px 6px grey;
+
 }
 .codeSpace p
 {
 	font-size: 18px;
+	font-family: 'Encode Sans Condensed', sans-serif;
 	color:grey;
+}
+.description
+{
+	margin-top: 30px;
+	height:100%;
+	width:100%;
+	box-shadow: 2px 3px 6px grey;
+	padding-top: 0px;
+	font-family: 'Encode Sans Condensed', sans-serif;
+}
+.descContent
+{
+	padding-bottom: 20px;
+	font-size: 15px;
+}
+nav ul li
+{
+	float: right;
+}
+nav ul li
+{
+	padding-right:20px;
+	padding-left: 40px;
 }

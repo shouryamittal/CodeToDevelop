@@ -3,16 +3,49 @@
 <link rel="stylesheet" type="text/css" href="./css/responsive.css">
 
 <link rel="stylesheet" type="text/css" href="./css/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-<div class="top_div text-center">
+<!--<div class="top_div text-center">
 	<div class="text-center">
 		<p class="html_practise_heading text-center">HTML PRACTISE</p>
 		<p class="html_practise_subheading">Way to learn, practise and grow, practise and grow</p>
 		<button type="submit" class="btn btn-lg editor_btn" style="border: 1px solid #43B05F;">Go To Editor</button>
 	</div>
-</div>
+</div>-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="float:right">
+    <a class="navbar-brand" href="#"><span style="font-size:30px;color:#181830;font-family: 'Encode Sans Condensed', sans-serif;"><span><img src="./img/logo.png" height="50" width="60"></span>HTML Practice</span></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="padding-right:20px;float:right">
+      <li class="nav-item ">
+        <a class="nav-link" href="#" ui-sref="mainpage"><span style="font-size:15px">Home</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#" ui-sref="tips"><span style="font-size:15px">Tips For Developers</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" ng-click="gotoRMC()"><span style="font-size:15px">Readymade Code</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" ng-click="gotoTUT()"><span style="font-size:15px">Tutorials</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span style="font-size:15px">Practice</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">HTML Practice</a>
+          <a class="dropdown-item" href="#">JavaScript Practice</a>
+          <a class="dropdown-item" href="#">Java Practice</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-<div id="mySidenav" class="sidenav text-center">
+<!--<div id="mySidenav" class="sidenav text-center">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="Logo " style="text-align:center">
                 <img src="./img/logo.png" height="150" width="150">
@@ -25,7 +58,7 @@
         </div>
         <span class="hamburger" onclick="openNav()">&#9776;</span>
 <!--changed now-->
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron bg-light" style="margin-left:20px;margin-right:20px;">
   <div class="container" style="background-color: white">
     <div id="page1" style="padding-top: 2vw" ng-show="PageOne">
         <div ng-repeat="question in ques">

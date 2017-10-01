@@ -19,7 +19,7 @@
 		<span class="hamburger" onclick="openNav()">&#9776;</span>
      	<div class="container">
      		<div class="heading">
-     			<h1><span class="heading_icon"><i class="fa fa-lightbulb-o fa-spin fa-pulse" aria-hidden="true"></i></span><span style="color:#43B05F">TIPS</span> FOR <span style="color:#43B05F;font-weight:bolder">DEVELOPERS</span></h1>
+     			<h1><span class="heading_icon"><i class="fa fa-lightbulb-o " aria-hidden="true"></i></span><span style="color:#43B05F">TIPS</span> FOR <span style="color:#43B05F;font-weight:bolder">DEVELOPERS</span></h1>
      		</div>
      	</div>
      	
@@ -27,48 +27,49 @@
      			<div class="container">
 	     			<ul class="nav nav-tabs flex-column flex-sm-row nav-fill" id="myTab" role="tablist">
 					  <li class="nav-item active">
-					    <a class="nav-link active" id="front-end-tab" data-toggle="tab" href="#frontend" role="tab" aria-controls="home" aria-expanded="true" ng-click="showFrontEndTips()">Web Frontend</a>
+					    <a class="nav-link" id="front-end-tab" data-toggle="tab" href="#frontend" role="tab" aria-controls="home" aria-expanded="true" ng-click="showFrontEndTips();click=1">Web Frontend</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" id="back-end-tab" data-toggle="tab" href="#backend" role="tab" aria-controls="profile" ng-click="showBackEndTips()">Web Backend</a>
+					    <a class="nav-link" id="back-end-tab" data-toggle="tab" href="#backend" role="tab" aria-controls="profile" ng-click="showBackEndTips();click=2">Web Backend</a>
 					  </li>
 
 					  <li class="nav-item">
-					    <a class="nav-link" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="profile" ng-click="javaTips()">Java</a>
+					    <a class="nav-link" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="profile" ng-click="javaTips();click=3">Java</a>
 					  </li>  
 					</ul>
 
-					<div class="tab-content" id="myTabContent" >
+					<div class="tab-content" id="myTabContent" ng-show="click==1" >
 					  <div class="tab-pane fade show active" id="frontend" role="tabpanel" aria-labelledby="front-end-tab">
-					  	<div class="card text-center mb-3 tips_card" ng-repeat="tip in frontEndTip">
+					  	<div class="card mb-3 tips_card" ng-repeat="tip in frontEndTip">
 						  	<div class="card-header bg-transparent">{{tip.tip_heading}}</div>
-						 	<div class="card-body text-primary">
-						    	<p class="card-text" style="text-align: left">{{tip.tip_content}}</p>
+						 	<div class="card-body ">
+						    	<p class="card-text" style="text-align: left;color:	#546a90">{{tip.tip_content}}</p>
 						  	</div>
-						  	<div class="card-footer bg-transparent ">By ~ {{tip.author_name}}
+						  	<div class="card-footer bg-transparent text-muted">Submitted by ~ {{tip.author_name}}
 						  	</div>
 						</div>
 					  </div>
-					 
-
+					</div> 
+					<div class="tab-content" id="myTabContent" ng-show="click==2" >
 					  <div class="tab-pane fade" id="backend" role="tabpanel" aria-labelledby="back-end-tab">
-					  	<div class="card text-center mb-3 tips_card" ng-repeat="tip in backEndTip">
+					  	<div class="card mb-3 tips_card" ng-repeat="tip in backEndTip">
 						  <div class="card-header bg-transparent">{{tip.tip_heading}}</div>
-						  <div class="card-body text-primary">
-						    <p class="card-text" style="text-align: left">{{tip.tip_content}}</p>
+						  <div class="card-body ">
+						    <p class="card-text" style="text-align: left;color:	#546a90">{{tip.tip_content}}</p>
 						  </div>
-						  <div class="card-footer bg-transparent ">By ~ {{tip.author_name}}</div>
+						  <div class="card-footer bg-transparent text-muted">Submitted by ~ {{tip.author_name}}</div>
 						</div>
 					  </div>
-					  
+					 </div> 
+					 <div class="tab-content" id="myTabContent" ng-show="click==3" >
 					  <div class="tab-pane fade" id="java" role="tabpanel" aria-labelledby="kava-tab">
-					  	<div class="card text-center mb-3 tips_card" ng-repeat="tip in javaTip">
+					  	<div class="card  mb-3 tips_card" ng-repeat="tip in javaTip">
 						  <div class="card-header bg-transparent">{{tip.tip_heading}}</div>
-						  <div class="card-body text-primary">
+						  <div class="card-body ">
 						   
-						    <p class="card-text" style="text-align: left">{{tip.tip_content}}</p>
+						    <p class="card-text" style="text-align: left;color:	#546a90">{{tip.tip_content}}</p>
 						  </div>
-						  <div class="card-footer bg-transparent ">By ~ {{tip.author_name}}</div>
+						  <div class="card-footer bg-transparent text-muted">Submitted by ~ {{tip.author_name}}</div>
 						</div>
 					  </div>
 					 
@@ -82,7 +83,7 @@
      <div class="col-md-3 new_tip">
      	<div class="container">
      		<div class="new_tip_content_heading">
-     			<img src="img/logo3.png" height="110" width="150">
+     			<img src="img/logo1.png" height="110" width="150">
      		</div>
      		<div class="new_tip_content_textarea">
      			<div class="subhead">
@@ -90,22 +91,20 @@
      				<p>Get it featured on CODE_TO_DEVELOP</p>
      			</div>
 
-     			<div class="text-center">
-     				<p class="userGreeting" ng-show="tipsaved">Your tip has been saved. It will be displayed soon!!!!!</p>
-     			</div>
-
      			<form name="tip_form" novalidate>
 	     			<div class="form-group">
 					  <input type="text" class="form-control" placeholder="Tip Heading" ng-model="tip_heading" required>
 					  <textarea type="text" class="form-control" rows="10" id="comment" placeholder="Give Your super Tip to help Other developers" ng-model="tip_content" required></textarea>
 					  <input type="text" class="form-control" placeholder="Your Name" ng-model="author_name" required>
-					  <select class="form-control" required ng-model="tip_language">
-					  	<option>Web Frontend</option>
-					  	<option>Web Backend</option>
-					  	<option>Java</option>
+					  <select class="form-control" required ng-model="tip_language" placeholder="Type">
+					  	<option value="Web Frontend">Web Frontend</option>
+					  	<option value="Web Backend">Web Backend</option>
+					  	<option value="Java">Java</option>
 					  </select>
 					</div>
-
+					<div class="text-center">
+     					<p class="userGreeting" ng-show="tipsaved">Your tip has been saved. It will be displayed soon!!!!!</p>
+     				</div>
 					<div class="Submit_Your_Tip">
 		     			<button type="button" class="btn btn-outline-primary btn-lg" ng-disabled="tip_form.$invalid" ng-click="save_tips()"><span style="color:white">Submit Your Tip</span></button>
 		     		</div>

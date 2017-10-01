@@ -44,28 +44,29 @@
 					</div>
 
 					<div class="signinForm">
-						<form>
+						<form name="signinForm" novalidate>
 						    <div class="form-group row">
 						      
 						      <div class="col-sm-11">
-						        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+						        <input type="email" class="form-control" id="inputEmail3" ng-model="signinMail" placeholder="Email" required>
 						      </div>
 						    </div>
 
 						    <div class="form-group row">
 						      
 						      <div class="col-sm-11">
-						        <input type="password" class="form-control" id="inputEmail3" placeholder="Password">
+						        <input type="password" class="form-control" id="inputEmail3" ng-model="signinPass" placeholder="Password" required>
 						      </div>
 						    </div>
 						    <div class=" row signinButton">
 						      <div class="col-sm-11">
-						       <button type="button" class="btn btn-outline-success">Sign In</button>
+						       <button type="button" class="btn btn-outline-success" ng-click="signin()" ng-disabled="signinForm.$invalid">Sign In</button>
+						       <p style="padding-top:10px;color:red;position:absolute;font-size:15px" ng-model="signinError">{{signinError}}</p>
 						      </div>
 						    </div>
 						    
 						</form>
-						<hr style="background-color:grey;position:absolute;top:200px">
+						<hr style="background-color:grey;position:absolute;top:190px">
 						<div class="signinBottom">
 							<div class="form-group">
 						        <div class="col-sm-12 text-center">	

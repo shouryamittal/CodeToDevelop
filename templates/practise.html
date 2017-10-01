@@ -2,64 +2,87 @@
 <link rel="stylesheet" type="text/css" href="./css/responsive.css">
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
-<div id="mySidenav" class="sidenav text-center">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <div class="Logo " style="text-align:center">
-				<img src="./img/logo.png" height="150" width="150">
-		  </div>
-		  <a href="#" ui-sref="mainpage"><span class="sidenav_icon"><i class="fa fa-home" aria-hidden="true" ></i></span>Home</a>
-		  <a href="#" ui-sref="tips"><span class="sidenav_icon"><i class="fa fa-lightbulb-o" aria-hidden="true" ></i></span>Tips for Developers</a>
-		  <a href="#" ng-click="gotoRMC()"><span class="sidenav_icon"><i class="fa fa-cubes" aria-hidden="true" ></i></span>Readymade Code</a>
-		  <a href="#" ui-sref="practise"><span class="sidenav_icon"> <i class="fa fa-pencil" aria-hidden="true" ></i></span>Practice</a>
-		  <a href="#" ng-click="gotoTUT()"><span class="sidenav_icon"><i class="fa fa-picture-o" aria-hidden="true" ></i></span>Tutorials</a>
-		</div>
-		<span class="hamburger" onclick="openNav()">&#9776;</span>
 <div class="top_section">
-	<div class="text-center">
-		<p class="top_section_heading text-center">PRACTISE</p>
-		<p class="top_section_subheading text-center">Way to learn, practise and grow, practise and grow</p>
-		<div>
-		<button type="submit" class="btn  btn-lg editor_btn_in_practise" style="border: 1px solid #43B05F">Go To Editor</button>
-		</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#"><span style="font-size:30px;color:#181830;font-family: 'Encode Sans Condensed', sans-serif;"><span><img src="./img/logo.png" height="50" width="60"></span>Practice</span></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-end" style="padding-right:20px;float:right">
+      <li class="nav-item ">
+        <a class="nav-link" href="#" ui-sref="mainpage"><span style="font-size:15px">Home</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#" ui-sref="tips"><span style="font-size:15px">Tips For Developers</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" ng-click="gotoTUT()"><span style="font-size:15px">Tutorials</span></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#" ng-click="gotoRMC()"><span style="font-size:15px">Readymade Code</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<div class="top_section_heading">
+		<p><span class="pracimg"><img src="./img/prac.png" height="40" width="40"></span>Practice more to get familiar with development</p>
+		<hr style="background-color:#181830;width:250px;padding-top:2px">
 	</div>
 
-	<div class="container-fluid">
+	<div class="container-fluid content">
 		<div class="row cards_row">
 			<div class="col-md-3">
-				<div class="card  card1 htmlPractise_tint" style="border: none;border: 4px solid rgba(255, 87, 34,0.5);background: transparent;">
-					<img src="./img/html1.png" class="html_img">
+				<div class="card  card1 htmlPractise_tint" >
+					<!--<img src="./img/html1.png" class="html_img">-->
+					<div class="tint1">
+						<p class="text_on_tint">HTML</p>
+						<hr style="background-color:#43B05F;width:90px;padding-top:2px">
+					</div>
 				</div>
 
 				<!-- adee a part now-->
 				<div class="a">
-				<button type="button" class="btn btn-block html_prac_btn" ui-sref="html_practise" style="border: 3px solid rgba(255, 87, 34,0.5)" ng-click="first()">HTML Practise</button>
+				<button type="button" class="btn btn-block html_prac_btn" ui-sref="html_practise"  ng-click="first()">HTML Practise</button>
 				</div>
 				<!-- add finished-->
 			</div>
 
 			<div class="col-md-3">
-				<div class="card card1 cssPractise_tint" style="border: 4px solid rgba(213, 0, 0,0.5);background: transparent;">
-					<img src="./img/css1.png" class="css_img">
+				<div class="card card1 cssPractise_tint" >
+					<!--<img src="./img/css1.png" class="css_img">-->
+					<div class="tint1">
+						<p class="text_on_tint">CSS</p>
+						<hr style="background-color:#43B05F;width:90px;padding-top:2px">
+					</div>
 				</div>
 
-				<button type="button" class="btn btn-block css_prac_btn" ui-sref="css_practise" style="border: 3px solid rgba(213, 0, 0,0.5);" ng-click="second()">CSS Practise</button>
+				<button type="button" class="btn btn-block css_prac_btn" ui-sref="css_practise"  ng-click="second()">CSS Practise</button>
 			</div>
 
 			<div class="col-md-3 ">
-				<div class="card card1 jsPractise_tint" style="border: 4px solid rgba(85, 139, 47,0.7);background: transparent;">
-					<img src="./img/js2.png" class="js_img">
+				<div class="card card1 jsPractise_tint">
+					<!--<img src="./img/js2.png" class="js_img">-->
+					<div class="tint1">
+						<p class="text_on_tint">Javascript</p>
+						<hr style="background-color:#43B05F;width:90px;padding-top:2px">
+					</div>
 				</div>
 
-				<button type="button" class="btn btn-block js_prac_btn" style="border: 3px solid rgba(85, 139, 47,0.7);">JS Practise</button>
+				<button type="button" class="btn btn-block js_prac_btn" >JS Practise</button>
 			</div>
 
 			<div class="col-md-3">
-				<div class="card card1 javaPractise_tint" style="border: 4px solid rgba(255, 196, 0,0.6);background: transparent;">
-					<img src="./img/java1.png" class="java_img">
+				<div class="card card1 javaPractise_tint">
+					<!--<img src="./img/java1.png" class="java_img">-->
+					<div class="tint1">
+						<p class="text_on_tint">Java</p>
+						<hr style="background-color:#43B05F;width:90px;padding-top:2px">
+					</div>
 				</div>
 
-				<button type="button" class="btn btn-block java_prac_btn" style="border: 3px solid rgba(255, 196, 0,0.6);">Java Practise</button>
+				<button type="button" class="btn btn-block java_prac_btn" >Java Practise</button>
 			</div>
 		</div>
 	</div>
