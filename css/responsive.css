@@ -28,6 +28,63 @@
 		
 	}
 
+	.website_heading
+	{
+		font-size: 30px;
+		margin-left: 20px;
+		margin-top: 12vw;
+	}
+
+	.website_subheading
+	{
+		font-size: 17px;
+		margin-left: 20px;
+	}
+
+	.readymadecode_subheading
+	{
+		font-size: 16px;
+		margin-left: 20px;
+	}
+
+	.signin_btn_div
+	{
+		margin-top: 5.5vw;
+		position: absolute;
+		right: 35%;
+		width: 22%;
+	}
+
+	.signup_btn_div
+	{
+		margin-top: 5.5vw;
+		position: absolute;
+		right: 8%;
+		width: 24%;	
+	}
+
+	.learn_btn
+	{
+		left: 10vw;
+	}
+
+	.laptop_img
+	{
+		margin-top: 40px;
+		margin-left: 40px;
+	}
+
+	.laptop_img1
+	{
+		margin-top: -3px;
+		margin-left: 40px;
+	}
+
+	.myindicator
+	{
+		top: 500px;
+	}
+
 	.hamburger
 	{
 		
@@ -335,6 +392,63 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px){
+	.website_heading
+	{
+		font-size: 30px;
+		margin-left: 30px;
+		margin-top: 12vw;
+	}
+
+	.website_subheading
+	{
+		font-size: 17px;
+		margin-left: 30px;
+	}
+
+	.readymadecode_subheading
+	{
+		font-size: 16px;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	.signin_btn_div
+	{
+		margin-top: 5.5vw;
+		position: absolute;
+		right: 37%;
+		width: 22%;
+	}
+
+	.signup_btn_div
+	{
+		margin-top: 5.5vw;
+		position: absolute;
+		right: 10%;
+		width: 24%;	
+	}
+
+	.learn_btn
+	{
+		margin-left: 10vw;
+	}
+
+	.laptop_img
+	{
+		margin-top: -36px;
+		margin-left: 64px;
+	}
+
+	.laptop_img1
+	{
+		margin-top: -30px;
+		margin-left: 64px;
+	}
+
+	.myindicator
+	{
+		top: 510px;
+	}
 	/** *****************************************************css relared to practise section********************/
 	.top_section_heading{
 		font-size: 5vw;
@@ -445,6 +559,68 @@
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
 
+	.website_heading
+	{
+		font-size: 30px;
+		margin-left: 30px;
+		margin-top: 2vw;
+	}
+
+	.website_subheading
+	{
+		font-size: 17px;
+		margin-left: 30px;
+	}
+
+	.readymadecode_subheading
+	{
+		font-size: 16px;
+		margin-left: 30px;
+		margin-right: 70px;
+	}
+
+	.signin_btn_div
+	{
+		margin-top: 5.5vw;
+		position: absolute;
+		right: 25%;
+		width: 14%;
+	}
+
+	.signup_btn_div
+	{
+		margin-top: 5.5vw;
+		position: absolute;
+		right: 7%;
+		width: 14%;	
+	}
+
+	.learn_btn
+	{
+		margin-left: 10vw;
+	}
+
+	.laptop_img
+	{
+		margin-top: -56px;
+		margin-left: 204px;
+		height: 45%;
+		width: 45%;
+	}
+
+	.laptop_img1
+	{
+		margin-top: -40px;
+		margin-left: 204px;
+		height: 45%;
+		width: 45%;
+	}
+
+	.myindicator
+	{
+		top: 450px;
+	}
+
 	/** *****************************************************css relared to practise section********************/
 	.editor_btn_in_practise
 	{
@@ -483,6 +659,61 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px){
+	.website_heading
+	{
+		font-size: 35px;
+		margin-left: 30px;
+		margin-top: 2vw;
+	}
+
+	.website_subheading
+	{
+		font-size: 17px;
+		margin-left: 30px;
+	}
+
+	.readymadecode_subheading
+	{
+		font-size: 16px;
+		margin-left: 30px;
+		margin-right: 70px;
+	}
+
+	.signin_btn_div
+	{
+		margin-top: 5.5vw;
+		position: absolute;
+		right: 22%;
+		width: 10%;
+	}
+
+	.signup_btn_div
+	{
+		margin-top: 5.5vw;
+		position: absolute;
+		right: 8%;
+		width: 12%;	
+	}
+	.laptop_img
+	{
+		margin-top: 5px;
+		margin-left: -30px;
+		height: 100%;
+		width: 100%;
+	}
+
+	.laptop_img1
+	{
+		margin-top: 5px;
+		margin-left: -30px;
+		height: 100%;
+		width: 100%;
+	}
+
+	.myindicator
+	{
+		top: 400px;
+	}
 	/** css for html_practise**/
 
 	.top_div
@@ -513,6 +744,56 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1300px){
+	.website_heading
+	{
+		font-size: 35px;
+		margin-left: 30px;
+		margin-top: 2vw;
+	}
+
+	.website_subheading
+	{
+		font-size: 17px;
+		margin-left: 30px;
+	}
+
+	.readymadecode_subheading
+	{
+		font-size: 16px;
+		margin-left: 30px;
+		margin-right: 70px;
+	}
+
+	.signin_btn_div
+	{
+		margin-top: 5.5vw;
+		position: absolute;
+		right: 22%;
+		width: 10%;
+	}
+
+	.signup_btn_div
+	{
+		margin-top: 5.5vw;
+		position: absolute;
+		right: 8%;
+		width: 12%;	
+	}
+	.laptop_img
+	{
+		margin-top: 5px;
+		margin-left: -30px;
+		height: 100%;
+		width: 100%;
+	}
+
+	.laptop_img1
+	{
+		margin-top: 5px;
+		margin-left: -30px;
+		height: 100%;
+		width: 100%;
+	}
 	/** css for html_practise**/
 
 	.top_div

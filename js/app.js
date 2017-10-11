@@ -181,6 +181,7 @@ app.controller('readymadecodeController',function($scope,$rootScope,$state,$http
 	$scope.javaCode=function(){
 		$rootScope.code_type="java";
 		$state.go("javaCode");
+
 	}
 
 })
@@ -207,7 +208,6 @@ app.controller('javaCodeController',function($state,$http,$scope,$rootScope){
 			$scope.javaCode=response.data;
 			//console.log($scope.javaCode);
 		})
-
 	})
 
 	$scope.getCode=function(value){	
@@ -226,7 +226,7 @@ app.controller('javaCodeController',function($state,$http,$scope,$rootScope){
 		})
 	}
 	
-})
+});
 
 app.controller('signupController',function($scope,$rootScope,$http,$state){
 

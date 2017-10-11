@@ -12,11 +12,11 @@
 }
 body
 {
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'Scope One', serif;
 }
 html
 {
-	font-family: 'Encode Sans Condensed', sans-serif;
+	font-family: 'Scope One', serif;
 }
 .heading_icon
 {
@@ -24,7 +24,7 @@ html
 }
 .mainpageSection
 {
-	background: url('../img/back6.jpg') no-repeat;
+	background: url('../img/poly2.jpg') no-repeat;
 	background-size: cover;
 	height: 653px;
 	width: 100%;	
@@ -39,7 +39,7 @@ html
 	top:0px;
 	left: 0px;
 	height:100%;
-	background: linear-gradient(rgba(24, 24, 48,0.8),rgba(24, 24, 48,0.8));
+	background: linear-gradient(rgba(24, 24, 48,0.6),rgba(24, 24, 48,0.6));
 	width: 100%;
 	margin-top: 0px;
 }
@@ -103,8 +103,7 @@ html
 	background-color: red;
 }
 .slides{
-	position: absolute;
-	top:15vw;
+	padding-top:15vw;
 	color: white
 }
 
@@ -227,4 +226,71 @@ html
 	text-decoration: none;
 	float: right;
 	padding:20px;
+}
+
+.website_heading
+{
+	color: rgb(67, 176, 95);
+	font-size: 60px;
+}
+
+.website_subheading
+{
+	font-size: 35px;
+	/*color: #ff9e80;*/
+	color:white;
+}
+
+.readymadecode_subheading
+{
+	font-size: 22px;
+	color: white;
+}
+
+.signin_btn_div
+{
+	margin-top: 2vw;
+	position: absolute;
+	right: 14%;
+	width: 8%;
+}
+
+.signin_btn
+{
+	background-color:rgb(67, 176, 95);
+	color: white;
+}
+
+.signup_btn_div
+{
+	margin-top: 2vw;
+	position: absolute;
+	right: 4%;
+	width: 8%;	
+}
+
+.laptop_img
+{
+	height: 75%;
+	width: 75%;
+	margin-top: -70px;
+	margin-left: 60px;
+}
+
+.laptop_img1
+{
+	height: 75%;
+	width: 75%;
+	margin-top: -70px;
+	margin-left: 60px;
+}
+
+.learn_btn
+{
+	margin-top: 1.2vw;
+}
+
+.myindicator
+{
+	top: 300px;
 }
